@@ -11,7 +11,6 @@ app.post("/login", async (req, res) => {
       if (password === user.password) {
         res.status(200).send({
           token: `${email}:${password}`,
-          user:user.email
         });
       } else {
         res.status(401).send("Authentication failed, Incorrect password");
@@ -24,7 +23,7 @@ app.post("/login", async (req, res) => {
   }
 });
 app.post("/signup", async (req, res) => {
-  const { email, password, name, age } = req.body;
+  const { email, password, name, country, currency } = req.body;
   try {
     let existingUser = await User.findOne({ email });
     if (existingUser) {
@@ -34,7 +33,8 @@ app.post("/signup", async (req, res) => {
         email,
         password,
         name,
-        age,
+        country,
+        currency,
       });
       res.status(200).send({
         token: `${email}:${password}`,
@@ -44,15 +44,12 @@ app.post("/signup", async (req, res) => {
     res.status(404).send(e.message);
   }
 });
-app.get("/",async (req, res)=>{
- 
-  try{
-    let users = await User.find()
+app.get("/", async (req, res) => {
+  try {
+    let users = await User.find();
     res.status(200).send(users);
-  }catch(e){
+  } catch (e) {
     res.status(404).send(e.message);
   }
-  
-
-})
+});
 module.exports = app;
