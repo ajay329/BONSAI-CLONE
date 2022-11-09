@@ -1,0 +1,13 @@
+a:hover{
+    text-decoration: underline;
+    }
+
+p{
+    padding: 1rem 0;
+    color:#4C4D5F;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+heading{
+    padding:1em ;
+}
