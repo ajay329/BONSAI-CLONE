@@ -1,6 +1,6 @@
 import {
-  Alert,
-  AlertIcon,
+  // Alert,
+  // AlertIcon,
   Box,
   Button,
   Checkbox,
@@ -19,7 +19,7 @@ import { LoginNavbar } from "./LoginNavbar";
 import Axios from "axios";
 export const Login = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:8080/users/login";
+  const url = "https://embarrassed-trousers-ant.cyclic.app/users/login";
   const [data, setData] = useState({
     email: "",
     password: "",
