@@ -21,6 +21,6 @@ const AllRoutes = () => {
         <Route path='/products' element={<Product/>}></Route>
     </Routes>
   )
-}
+};
 
-export default AllRoutes
+export default AllRoutes;
