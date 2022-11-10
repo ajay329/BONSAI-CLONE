@@ -12,9 +12,9 @@ import {
   Text,
   Link,
   VStack,
-  Alert,
-  AlertIcon,
-  AlertTitle,
+  // Alert,
+  // AlertIcon,
+  // AlertTitle,
 } from "@chakra-ui/react";
 
 import React, { useState } from "react";
@@ -444,7 +444,7 @@ const intialData = {
 }
 export const SignUp = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:8080/users/signUp";
+  const url = "https://embarrassed-trousers-ant.cyclic.app/users/signup";
   const [data, setData] = useState(intialData);
 
   async function submit(e) {

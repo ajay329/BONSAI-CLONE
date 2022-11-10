@@ -6,7 +6,7 @@ import { Login } from '../Pages/Login_Signup/Login'
 import { SignUp } from '../Pages/Login_Signup/Signup'
 import Pricing from '../Pages/PricePage/Pricing'
 import Product from '../Pages/ProductPage/Product'
-import Review from '../Pages/ReviewPage/Review'
+import Reviews from '../Pages/ReviewPage/Review'
 import Template from '../Pages/Templates/Template'
 
 const AllRoutes = () => {
@@ -14,7 +14,7 @@ const AllRoutes = () => {
     <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/Pricing' element={<Pricing/>}></Route>
-        <Route path='/Reviews' element={<Review/>}></Route>
+        <Route path='/Reviews' element={<Reviews/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
         <Route path='/template' element={<Template/>}></Route>

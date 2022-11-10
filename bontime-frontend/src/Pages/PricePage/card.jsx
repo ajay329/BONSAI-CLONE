@@ -1,4 +1,4 @@
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { TiTick } from "react-icons/ti";
 
@@ -53,7 +53,6 @@ const Card = ({ head, headP, rateM, rateY, ym, lists }) => {
       ))}
       <br />
       
-       
     </Box>
   );
 };

@@ -168,7 +168,7 @@ const Pricing = () => {
             </Heading>
           </Box>
           <Spacer />
-          <Link to="/dashboard">
+          <Link to="">
             <Button
               bg={"#00b289"}
               p={4}
@@ -177,7 +177,7 @@ const Pricing = () => {
               mt={{ base: "20px" }}
               mr={{ sm: "20px" }}
             >
-              GO TO DASHBOARD
+              Start Free
             </Button>
           </Link>
         </Flex>
