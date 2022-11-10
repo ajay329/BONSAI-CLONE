@@ -8,6 +8,27 @@ p{
     font-size: 1.2em;
     font-weight: 500;
 }
-heading{
-    padding:1em ;
+.Hfsize{
+   font-weight: 900;
+    font-size: 2em;
+    color: black;
+    padding-bottom: 0.2rem;
+    
 }
+.subH{
+   font-weight: 900;
+   color: black;
+   font-size: 1.2em;
+
+}
+.liP{
+    padding: 0.5rem 0;
+    color:#4C4D5F;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+/* 
+<Text className="Hfsize"></Text>
+<li className="liP"></li>
+<Text className="subH"></Text>
+ */

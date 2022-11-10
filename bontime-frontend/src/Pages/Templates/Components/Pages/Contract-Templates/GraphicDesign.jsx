@@ -1,5 +1,5 @@
-import "./Article.css";
-
+import React from 'react'
+import TopSection from '../../Contract/TopSection'
 import "../../Contract/Article.css";
 
 import {
@@ -12,10 +12,14 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-const Article = () => {
+
+function GraphicDesign() {
+    const heading = "Free Design Contract Template";
+    const desc = "with a bulletproof template & simple e-signing"
   return (
     <>
-      <Box fontFamily="Proximanova opt sans-serif" mb="5rem">
+        <TopSection heading={heading} desc={desc}/>
+        <Box fontFamily="Proximanova opt sans-serif" mb="5rem">
         <Grid
           templateColumns={{
             sm: "100%",
@@ -105,7 +109,7 @@ const Article = () => {
         </Grid>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default Article;
+export default GraphicDesign

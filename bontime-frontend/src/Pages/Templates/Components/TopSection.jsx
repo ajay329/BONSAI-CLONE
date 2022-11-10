@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-const TopSection = () => {
+const TopSection = ({heading,desc}) => {
   return (
     <>
     <Box
@@ -17,23 +17,24 @@ const TopSection = () => {
       m="auto"
       fontFamily="Proximanova opt sans-serif"
     >
-      <Text fontSize="1.5em" color="#4C525A">TEMPLATE</Text>
+      <Text fontSize={{base:"1em",md:"1.5em"}} color="#4C525A">TEMPLATE</Text>
 
       <Heading
         pt="1.5rem"
         fontWeight={500}
-        lineHeight="3rem"
-        fontSize="2.5em"
-        w="60%"
+        lineHeight={{base:"1.6rem",md:"3rem"}}
+        fontSize={{base:"1.5em",md:"2.5em"}}
+        textAlign="center"
+        w={{base:"100%",md:"80%",lg:"70%"}}
         m="auto"
       >
-        Free Online Contract (with our Online Contract Maker)
+        {heading}
       </Heading>
 
-      <Text p="1.5rem 0" fontSize="1.5em" color="#4C525A">
-        with a bulletproof template & simple e-signing
+      <Text p="1.5rem 0" fontSize={{base:"1em",md:"1.3em"}} w={{base:"100%"}} color="#4C525A">
+        {desc}
       </Text>
-      <Box w="40%" m="auto" boxShadow='2xl' borderRadius="30px">
+      <Box w={{base:"100%",md:"70%" ,lg:"40%"}} m="auto" boxShadow='2xl' borderRadius="30px">
         <InputGroup
           size="md"
           border="3px solid #00B98E"
@@ -42,12 +43,12 @@ const TopSection = () => {
         >
           <Input
             mt="1"
-            // pr="2rem"
+            
             borderRadius="30px"
             border="none"
             placeholder="Enter your email"
           />
-          <InputRightElement width="10rem" mt="1">
+          <InputRightElement width={{base:"7rem" ,md:"9rem",lg:"10rem",'2xl':"10rem"}} mt="1">
             <Button
               h="3rem"
               size="sm"
@@ -65,8 +66,8 @@ const TopSection = () => {
         </InputGroup>
       </Box>
     </Box>
-      <Box m="auto" mt="10%" boxShadow='md' bgColor="#E5E4E2" w="100%" textAlign="center">
-        <Text fontSize="1.5em" p="4rem" color="#4C525A">Bonsai has helped create <b color="black">1,023,928</b>  documents and counting</Text>
+      <Box m="auto" mt="10%" boxShadow='md'mb="5rem" bgColor="#E5E4E2" w="100%" textAlign="center">
+        <Text fontSize={{sm:"0.2em",md:"1.2em"}} p="4rem" color="#4C525A">Bonsai has helped create <b color="black">1,023,928</b>  documents and counting</Text>
       </Box>
     </>
   );
