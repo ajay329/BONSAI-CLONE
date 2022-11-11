@@ -3,7 +3,7 @@ import { Button, Stack } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import style from './Navbar.module.css';
-import logo from '../../Assets/Logo/logo.png';
+import logo from '../../assets/Logo/logo.png';
 
 const Navbar = () => {
   const navigate = useNavigate();

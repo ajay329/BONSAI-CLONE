@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, ButtonGroup, Flex, Image, Spacer } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/Logo/logo.png"
 export const LoginNavbar = () => {
   return (
     <Box w="100%" px="10px" >
@@ -11,7 +11,7 @@ export const LoginNavbar = () => {
           <Image
           height={'50px'}
             src={
-              "https://app.hellobonsai.com/assets/logo-icon-6263c52498bd8749917ac337dfcb797432a7d3df25bc04e1a5ce2b0e7451268e.png"
+              logo
             }
           />
           </Link>
