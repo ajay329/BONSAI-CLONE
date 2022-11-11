@@ -21,6 +21,8 @@ import { questions, pricingDetails } from "./priceConstants";
 import { useState } from "react";
 import Card from "./card";
 import Cards2 from "./cards2";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer"
 const Pricing = () => {
   const [ym, setym] = useState(false);
 
@@ -28,7 +30,12 @@ const Pricing = () => {
     setym(e.target.checked);
   };
   return (
+    
+    <div>
+      <Navbar/>
     <div className={styles.bg_shape}>
+
+      
       {/* plans and pricing top */}
       <Box p="10px 10px" w={{ lg: "60%", sm: "110%" }} margin="auto" mt="10%">
         <Grid
@@ -236,6 +243,8 @@ const Pricing = () => {
           </Accordion>
         </Box>
       </Box>
+    </div>
+    <Footer/>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Navbar = () => {
     navigate("/login");
   };
   const handleReview = () => {
-    navigate("/review");
+    navigate("/reviews");
   };
   const handlePricing = () => {
     navigate("/pricing");
