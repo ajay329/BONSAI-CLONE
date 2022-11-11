@@ -52,8 +52,15 @@ const Card = ({ head, headP, rateM, rateY, ym, lists }) => {
         </Box>
       ))}
       <br />
-      
-       
+      <Button
+        w="100%"
+        bgColor="#00b289"
+        color="white"
+        p="30px 30px"
+        _hover={{ bgColor: "none" }}
+      >
+        Start Free
+      </Button>
     </Box>
   );
 };
