@@ -14,12 +14,14 @@ import {
 import SignupTemplate from "../../Components/SignupTemplate";
 import RelatedTemplates from "../../Components/RelatedTemplates";
 import Footer from "../../../../components/Footer/Footer";
+import NavLogo from "../../Components/NavLogo";
 
 function GraphicDesign() {
   const heading = "Free Design Contract Template";
   const desc = "with a bulletproof template & simple e-signing";
   return (
     <>
+     <NavLogo/>
       <TopSection heading={heading} desc={desc} />
       <Box fontFamily="Proximanova opt sans-serif" mb="5rem">
         <Grid
@@ -409,8 +411,8 @@ function GraphicDesign() {
       </Box>
       <SignupTemplate/>
       <RelatedTemplates/>
-      <Box m="auto" textAlign="center"  bg="blackAlpha.900" w="100%" pt={20} sm={{h:"100vh"}}>
-        <Box>
+      <Box m="auto" bg="blackAlpha.900" w="100%" pt={10} sm={{h:"100vh"}}>
+        <Box ml={20}>
           <Footer />
 
         </Box>
