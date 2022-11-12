@@ -2,6 +2,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #4c525a;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 code {
