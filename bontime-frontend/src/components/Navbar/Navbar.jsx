@@ -18,7 +18,7 @@ import logo from '../../assets/Logo/logo.png';
 
 const Navbar = () => {
     let input = localStorage.getItem("token")
-    console.log(input);
+   
     const [token,setToken] = useState(input ? input : "")
     const navigate = useNavigate();
 
