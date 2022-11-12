@@ -1,80 +1,112 @@
-import "./Article.css"
+import "./Article.css";
+
 
 import {
   Box,
-  Container,
   Grid,
   Heading,
   List,
   ListItem,
+  Text,
 } from "@chakra-ui/react";
 
 const Article = () => {
   return (
     <>
-      <Box fontFamily="Proximanova opt sans-serif">
-        <Grid templateColumns="25% 70%" gap={5} m="auto" w="65%">
+      <Box fontFamily="Proximanova opt sans-serif" mb="5rem">
+        <Grid
+          templateColumns={{
+            sm: "100%",
+            md: "35% 62% ",
+            lg: "35% 75%",
+            xl: "30% 75%",
+          }}
+          gap={5}
+        
+          w={{
+            sm: "100%",
+            md: "100%",
+            lg: "65%",
+            xl: "65%",
+          }}
+          m="auto"
+        >
           <Box
-            h="65vh"
+            h={{md:"80vh",lg:"80vh",xl:"65vh",'2xl':"55vh"}}
             boxShadow="dark-lg"
             border="1px solid red"
-            position="sticky"
+            position={{md:"sticky",lg:"sticky"}}
             top={10}
-            left="16rem"
+           
             textAlign="left"
             p="5"
           >
-            <Heading fontSize="1.5em">Table of Contents </Heading>
+            <Heading fontSize={{ md:"1.5em",'2xl':"2em"}}>Table of Contents </Heading>
 
             <Box pt="1.5rem">
               <List spacing={2} color="#00B98E" fontWeight={700}>
                 <ListItem>
-                  <a href="#contractT">Are there free contract templates?</a>
+                  <a href="#">
+                    
+                    </a>
                 </ListItem>
                 <ListItem>
-                  <a href="#validC">
-                    What are the 5 requirements for a valid contract?
+                  <a href="#">
+                  
                   </a>
                 </ListItem>
                 <ListItem>
-                  <a href="#rule">What is the most basic rule to a contract?</a>
+                  <a href="#">
+                    
+                  </a>
                 </ListItem>
-                <a href="#onlineC">
-                  How can I create an online contract with Bonsai’s online
-                  contract maker?
+                <a href="#">
+                 
                 </a>
                 <ListItem>
-                  <a href="#creatingC">
-                    What are the Advantages of Creating a Contract with Bonsai?
+                  <a href="#">
+                   
                   </a>
                 </ListItem>
                 <ListItem>
-                  <a href="#help">How Else Can Bonsai Help You?</a>
+                  <a href="#">
+                    
+                  </a>
                 </ListItem>
               </List>
             </Box>
           </Box>
-          <Box h="350vh" border="1px solid red" p="1em 1em" >
-            <Box id="contractT">
-              <Heading>Are there free contract templates?</Heading>
-              <p>
-              Bonsai has lawyer curated general contract templates that you can easily edit. Simply create a free account and download the template.
-              </p>
+          <Box h="auto" border="1px solid red" p="1em 1em">
+            <Box id="">
+              <Text className='Hfsize'>
+                
+              </Text>
+              
             </Box>
-            <Box id="validC">
-              <Heading>What are the 5 requirements for a valid contract?</Heading>
-              <p>
-              The 5 requirements for a contract to be valid are: Offer, Acceptance, Consideration, Mutuality of obligation, and Competency and capacity. You may add more information to your contract, just make sure that the 5 requirements mentioned are present
-              </p>
+            <Box id="">
+              <Text className='Hfsize'>
+                
+              </Text>
+             
             </Box>
-            <Box id="rule">
-                <Heading></Heading>
-                <p></p>
+            <Box id="">
+              <Text className='Hfsize'>
+                
+              </Text>
             </Box>
-            <Box id="onlineC"></Box>
-            <Box id="creatingC"></Box>
-            <Box id="help"></Box>
-            
+            <Box id="">
+              <Text className='Hfsize'>
+                
+              </Text>
+            </Box>
+            <Box id="">
+            <Text className='Hfsize'>
+                
+                </Text>
+            </Box>
+            <Box id="">
+              
+            </Box>
           </Box>
         </Grid>
       </Box>
