@@ -1,10 +1,12 @@
 import {Box, Button, Heading, Image, SimpleGrid, Text} from "@chakra-ui/react"
-export default function BonCash(){
+export function BonsaiCash(){
     return(
-        <Box  height="auto">
-            <Box position={['relative']}  backgroundImage={'url(https://i.postimg.cc/jjkjjYc1/plain-image.png)'} backgroundRepeat="no-repeat" h={['auto']} backgroundSize="100%">
-                <Box w={['90%','86%','86%','86%']} ml={['5%','7%','7%','7%']}>
-                    <Heading fontSize={['24px','24px','2rem','2rem']} textAlign={['center']}>
+        <>
+        <Navbar />
+        <Box  height="auto" pt={['80px']} border='1px solid black'>
+            <Box pt={['80px']}   border='1px solid black'  backgroundImage={'url(https://i.postimg.cc/jjkjjYc1/plain-image.png)'} backgroundRepeat="no-repeat" h={['auto']} backgroundSize="100%">
+                <Box  border='1px solid black'  w={['90%','86%','86%','86%']} ml={['5%','7%','7%','7%']}>
+                    <Heading  fontSize={['24px','24px','2rem','2rem']} textAlign={['center']}>
                         One account
                         <br />
                         for everything business
@@ -14,11 +16,13 @@ export default function BonCash(){
                     <br />
                     All with no hidden fees and no minimums.
                     </Text>
-                    <Button pt={['20px','20px','20px','20px']} pb={['20px','20px','20px','20px']} pl={['100px','20px','20px','20px']} pr={['100px','20px','20px','20px']}  mt={['25px']} color={'rgb(255,255,236)'} bg={'rgb(0,178,137)'} _hover={{bg:"rgb(26,59,65)"}}>Sign up</Button>
-                   
+                    <Box border={'1px solid black'} display='flex' justifyContent={'center'}>
+                    <Button   pt={['20px','20px','20px','20px']} pb={['20px','20px','20px','20px']} pl={['100px','20px','20px','20px']} pr={['100px','20px','20px','20px']}  mt={['25px']} color={'rgb(255,255,236)'} bg={'rgb(0,178,137)'} _hover={{bg:"rgb(26,59,65)"}}>Sign up</Button>
+
+                    </Box>                    
 
                 </Box>
-                <Box h={['','250px','300px','450px']} mt={['','0px','100px','0px']}>
+                <Box  border='1px solid black'  h={['','250px','300px','450px']} mt={['','0px','100px','0px']}>
                         <Image  src="https://i.postimg.cc/ZRfpp251/card-holding-hand.png" w={['100%']} h={['','100%','100%','100%']} />
                 </Box>
 
@@ -112,7 +116,7 @@ export default function BonCash(){
             {/* --------------------------------------------------------------------------------------------- */}
             <Box h={['auto']} >
                 <Box  w={['96%','96%','96%','86%']} ml={['2%','2%','2%','7%']} h={['auto']}>
-                   
+                    
                     <SimpleGrid  columns={[1,2,2,2]}  w={['100%']}  h={['auto','600px','600px','600px']}>
                         <Box  h={['auto','100%','100%','100%']}  >
                             <Image   height={['80%','70%','90%','80%']}mt={['10%','15%','5%','10%']} w={['100%','100%','100%',"80%"]} src="https://i.postimg.cc/WbKpgGRY/6238c1a8fecf4d1b7856e7c7-Group-218-1-1.png" />
@@ -133,9 +137,9 @@ export default function BonCash(){
             {/* ------------------------------------------------------------------------------------------------------------ */}
             <Box  h={['auto']}  mt={['20px','0','0','0']}>
                 <Box  w={['96%','96%','96%','86%']} ml={['2%','2%','2%','7%']} h={['auto']}>
-                   
+                    
                     <SimpleGrid  columns={[1,2,2,2]}  w={['100%']}  h={['auto','600px','600px','600px']}>
-                       
+                        
                         <Box  display={['flex']} alignItems={['center']}>
                             <Box textAlign={['start']}    w={['100%','100%','100%','70%']}>
                                 <Heading  fontSize={['25px','25px','30px','30px']} fontWeight={[600]}>Receive your money faster</Heading>
@@ -151,10 +155,12 @@ export default function BonCash(){
                         </Box>
                     </SimpleGrid>
                 </Box>
-            </Box>
+        </Box>
 
 
         </Box>
+        <Footer/>
 
+        </>
     )
 }

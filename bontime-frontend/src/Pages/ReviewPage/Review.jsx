@@ -1,9 +1,15 @@
-import { Box, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Heading,  Text } from "@chakra-ui/react";
 import React from "react";
 import PerReview from "./PerReview";
 import { reviews } from "./reviewsConstants";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import styles from "./review.module.css"
 const Reviews = () => {
   return (
+    <div>
+      <Navbar/>
+      <div className={styles.midsection}>
     <Box mb="10%" p="2% 2%" mt="5%">
       {/* Top */}
       <Box w="80%" m="auto" fontWeight="400" textAlign="center">
@@ -31,6 +37,9 @@ const Reviews = () => {
         </Grid>
       </Box>
     </Box>
+    </div>
+    <Footer/>
+    </div>
   );
 };
 

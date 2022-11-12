@@ -1,8 +1,10 @@
 import {Box, Button, Heading, Image, Input, InputGroup, InputRightElement, SimpleGrid, Text} from "@chakra-ui/react"
-export default function BonTax(){
+export function BonsaiTax(){
     return(
-        <Box  height="auto" >
-            <Box h={['auto']}  >
+       <>
+       <Navbar />
+             <Box  height="auto" >
+            <Box h={['auto']}  pt={['80px']}>
                 <Box   w={['96%','96%','96%','86%']} ml={['2%','2%','2%','7%']} h={['100%']}>
                     <SimpleGrid   columns={[1,1,2,2]}  mt={['70px']} h={['auto','400px','550px','550px']} pb={['40px','0px','0px','0px']}>
                         <Box>
@@ -146,10 +148,64 @@ export default function BonTax(){
                 </Box>
             </Box>
             {/* ---------------------------------------------------------------------------- */}
+            <Box   h={['auto']}  mt={['20px','0','0','0']}>
+                <Box   w={['94%','94%','96%','86%']} ml={['3%','3%','2%','7%']} h={['auto']}>
+                    <Center   w={['100%']}>
+                        <Heading fontSize={['25px','25px','35px','35px']} w={['600px']} color="rgb(76,82,133)" fontWeight="400" textAlign={'center'}>Trusted by 500K+ self-employed workers and small businesses</Heading>
+                    </Center>
+                    <Center mt={['20px']}>
+                    <Text w={['600px']} textAlign={'center'} fontSize={['20px','20px','25px','25px']} color="rgb(76,82,133)">Whether you’re just getting started or your business is booming, Bonsai has you covered.</Text>
+
+                    </Center>
+                    <SimpleGrid  columns={[1,2,2,2]} mt={['50px']}  spacingY={8} w={['92%','70%','70%','70%']} ml={['4%','15%','15%','15%']} >
+                        <Box pl={'5px'} pr={'5px'}  w={['fit-content','fit-content','fit-content','300px']} h={['fit-content','fit-content','fit-content','250px']}>
+                            <Image src="https://i.postimg.cc/yxyv50F0/5e5fd7c602ca7ca8ebfeb662-ill-Built-for-4-block.png"/>
+                            <Text fontSize={['20px']} color="rgb(76,82,133)" textAlign={['start']} fontWeight="500" mt={['20px']}>Built for All Work Types</Text>
+                            <Text textAlign={['start']} color='rgb(76,82,133)' mt={['20px']}>We proudly back people with wide-ranging businesses—from design and marketing to development, writing, and photography.</Text>                                
+                        </Box>
+                        <Box pl={'5px'} pr={'5px'}  w={['fit-content','fit-content','fit-content','300px']} h={['fit-content','fit-content','fit-content','250px']}>
+                            <Image src="https://i.postimg.cc/VkrX0jd4/5e5fd7c602ca7c967efeb661-ill-Global-Support-4-block.png"/>
+                            <Text fontSize={['20px']} color="rgb(76,82,133)" textAlign={['start']} fontWeight="500" mt={['20px']}>Built for Global Businesses</Text>
+                             <Text textAlign={['start']} color='rgb(76,82,133)' mt={['20px']}>Bonsai has international coverage across the United States, Canada, UK, Australia and more, with 180 currencies supported.</Text>                       
+                        </Box>
+                        
+
+                    </SimpleGrid>
+                   
+                    
+                </Box>
+            </Box>
+            <Box   h={['auto']}  mt={['20px','20px','20px','20px']} mb='20px'>
+                <Box   w={['94%','94%','96%','86%']} ml={['3%','3%','2%','7%']} h={['auto']}>
+                    <Center   w={['100%']}>
+                        <Heading fontSize={['25px','25px','35px','35px']} w={['600px']} color="rgb(76,82,133)" fontWeight="400" textAlign={'center'}>Keep Exploring Bonsai’s Features</Heading>
+                    </Center>
+                    
+                    <SimpleGrid h='auto' columns={[1,2,2,2]} mt={['50px']}  spacingY={8} w={['92%','70%','70%','70%']} ml={['4%','15%','15%','15%']} >
+                        <Box pl={'5px'} pr={'5px'}  w={['fit-content','fit-content','fit-content','300px']} h={['fit-content','fit-content','fit-content','fit-content']}>
+                            <Image src="https://i.postimg.cc/DZqCkVxM/5e5fdcff2a5865afca6505f5-Explore-invoices.png"/>
+                            <Text fontSize={['20px']} color="rgb(76,82,133)" textAlign={['start']} fontWeight="500" mt={['20px']}>Invoices</Text>
+                            <Text textAlign={['start']} color='rgb(76,82,133)' mt={['20px']}>Get paid on time using smart invoicing with automatic remainders read receipts and a variety of payment options.</Text>                                
+                        </Box>
+                        <Box pl={'5px'} pr={'5px'}  w={['fit-content','fit-content','fit-content','300px']} h={['fit-content','fit-content','fit-content','fit-content']}>
+                            <Image src="https://i.postimg.cc/Y9pF9JpV/5e5fde8fb41ccd3277837201-ill-explore-contracts.png"/>
+                            <Text fontSize={['20px']} color="rgb(76,82,133)" textAlign={['start']} fontWeight="500" mt={['20px']}>Contracts</Text>
+                             <Text textAlign={['start']} color='rgb(76,82,133)' mt={['20px']}>Protect your business with your templated work contracts vetted by contract attorneys and thousands of freelancers.</Text>                       
+                        </Box>
+                        
+
+                    </SimpleGrid>
+                   
+                    
+                </Box>
+            </Box>
+            
             
 
 
         </Box>
+        <Footer/>
+       </>
 
     )
 }

@@ -13,129 +13,130 @@ import { CloseIcon, HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import data from "./data.json";
 import { ComponentModel } from "./ComponentModel";
+import style from './Navbar.module.css';
 import logo from '../../Assets/Logo/logo.png';
-import style from "./Navbar.module.css";
 
 const Navbar = () => {
     const navigate = useNavigate();
 
-    const handleHome = () => {
-        navigate("/");
-    };
-    const handleLogin = () => {
-        navigate("/login");
-    };
-    const handleReview = () => {
-        navigate("/reviews");
-    };
-    const handlePricing = () => {
-        navigate("/pricing");
-    }
-    const handleBonTax = () => {
-        navigate("/bonTax");
-    }
-    const handleBonCash = () => {
-        navigate("/bonCash")
-    }
+  const handleLogin = () => {
+    navigate("/login");
+  };
+  const handleReview = () => {
+    navigate("/review");
+  };
+  const handlePricing = () => {
+    navigate("/pricing");
+  }
+  const handleHome = () => {
+    navigate("/");
+  };
+  const handleBonTax = () => {
+    navigate("/bonTax");
+}
+const handleBonCash = () => {
+    navigate("/bonCash")
+}
 
-    const [dat, setData] = useState([{}]);
+const [dat, setData] = useState([{}]);
 
-    useEffect(() => {
-        const toggleProductUp = (element) => {
+useEffect(() => {
+    const toggleProductUp = (element) => {
+    element.style.display = "block";
+    element.addEventListener("mouseover", () => {
         element.style.display = "block";
-        element.addEventListener("mouseover", () => {
-            element.style.display = "block";
-        });
-        element.addEventListener("mouseout", () => {
-            element.style.display = "none";
-        });
-        };
-        const togglethirdUp = (element) => {
-        element.style.display = "flex";
-        element.addEventListener("mouseover", () => {
-            element.style.display = "flex";
-        });
-        element.addEventListener("mouseout", () => {
-            element.style.display = "none";
-        });
-        };
-        const toggleProductUpOff = (element) => {
+    });
+    element.addEventListener("mouseout", () => {
         element.style.display = "none";
-        };
+    });
+    };
+    const togglethirdUp = (element) => {
+    element.style.display = "flex";
+    element.addEventListener("mouseover", () => {
+        element.style.display = "flex";
+    });
+    element.addEventListener("mouseout", () => {
+        element.style.display = "none";
+    });
+    };
+    const toggleProductUpOff = (element) => {
+    element.style.display = "none";
+    };
 
-        let text1 = document.getElementById("text1");
-        if (text1) {
-        text1.addEventListener("mouseover", () => {
-            setData(data[0]);
-        });
-        }
-        let text2 = document.getElementById("text2");
-        if (text2) {
-        text2.addEventListener("mouseover", () => {
-            setData(data[1]);
-        });
-        }
-        let text3 = document.getElementById("rd");
-        if (text3) {
-        text3.addEventListener("mouseover", () => {
-            setData(data[2]);
-        });
-        }
-        let text4 = document.getElementById("4th");
-        if (text4) {
-        text4.addEventListener("mouseover", () => {
-            setData(data[3]);
-        });
-        }
-        let text5 = document.getElementById("5th");
-        if (text5) {
-        text5.addEventListener("mouseover", () => {
-            setData(data[4]);
-        });
-        }
-        let text6 = document.getElementById("6th");
-        if (text6) {
-        text6.addEventListener("mouseover", () => {
-            setData(data[5]);
-        });
-        }
-        let text7 = document.getElementById("7th");
-        if (text7) {
-        text7.addEventListener("mouseover", () => {
-            setData(data[6]);
-        });
-        }
-
-        let first = document.getElementById("1st");
-        let second = document.getElementById("1st_dropdown");
-
-        if (first) {
-        first.addEventListener("mouseover", () => {
-            toggleProductUp(second);
-        });
-        first.addEventListener("mouseout", () => {
-            toggleProductUpOff(second);
-        });
-        }
-        let third = document.getElementById("2nd");
-        let fourth = document.getElementById("2nd_dropdown");
-
-        if (third) {
-        fourth.style.display = "none";
-        third.addEventListener("mouseover", () => {
-            togglethirdUp(fourth);
-        });
-        third.addEventListener("mouseout", () => {
-            toggleProductUpOff(fourth);
-        });
-        }
-    }, []);
-
-    const { isOpen, onOpen, onClose } = useDisclosure();
-
-    useEffect(() => {
+    let text1 = document.getElementById("text1");
+    if (text1) {
+    text1.addEventListener("mouseover", () => {
         setData(data[0]);
-    }, []);
+    });
+    }
+    let text2 = document.getElementById("text2");
+    if (text2) {
+    text2.addEventListener("mouseover", () => {
+        setData(data[1]);
+    });
+    }
+    let text3 = document.getElementById("rd");
+    if (text3) {
+    text3.addEventListener("mouseover", () => {
+        setData(data[2]);
+    });
+    }
+    let text4 = document.getElementById("4th");
+    if (text4) {
+    text4.addEventListener("mouseover", () => {
+        setData(data[3]);
+    });
+    }
+    let text5 = document.getElementById("5th");
+    if (text5) {
+    text5.addEventListener("mouseover", () => {
+        setData(data[4]);
+    });
+    }
+    let text6 = document.getElementById("6th");
+    if (text6) {
+    text6.addEventListener("mouseover", () => {
+        setData(data[5]);
+    });
+    }
+    let text7 = document.getElementById("7th");
+    if (text7) {
+    text7.addEventListener("mouseover", () => {
+        setData(data[6]);
+    });
+    }
+
+    let first = document.getElementById("1st");
+    let second = document.getElementById("1st_dropdown");
+
+    if (first) {
+    first.addEventListener("mouseover", () => {
+        toggleProductUp(second);
+    });
+    first.addEventListener("mouseout", () => {
+        toggleProductUpOff(second);
+    });
+    }
+    let third = document.getElementById("2nd");
+    let fourth = document.getElementById("2nd_dropdown");
+
+    if (third) {
+    fourth.style.display = "none";
+    third.addEventListener("mouseover", () => {
+        togglethirdUp(fourth);
+    });
+    third.addEventListener("mouseout", () => {
+        toggleProductUpOff(fourth);
+    });
+    }
+}, []);
+
+const { isOpen, onOpen, onClose } = useDisclosure();
+
+useEffect(() => {
+    setData(data[0]);
+}, []);
+
 
     return (
         <Box className={style.nav}>
@@ -533,7 +534,7 @@ const Navbar = () => {
             </Box>
         </Box>
         </Box>
-    );
+    )
 };
 
 export default Navbar;
