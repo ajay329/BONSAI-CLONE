@@ -23,7 +23,7 @@ const initalState = {
 }
 export const Login = () => {
   const navigate = useNavigate();
-  const url = "https://embarrassed-trousers-ant.cyclic.app/users/login";
+  const url = "https://bontime-back.onrender.com/users/login";
   const [data, setData] = useState(initalState);
 
   async function submit(e) {
