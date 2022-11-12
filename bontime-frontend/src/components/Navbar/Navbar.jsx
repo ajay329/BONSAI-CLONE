@@ -17,6 +17,9 @@ import style from './Navbar.module.css';
 import logo from '../../assets/Logo/logo.png';
 
 const Navbar = () => {
+    let input = localStorage.getItem("token")
+   
+    const [token,setToken] = useState(input ? input : "")
     const navigate = useNavigate();
 
     const handleHome = () => {
@@ -25,6 +28,10 @@ const Navbar = () => {
     const handleLogin = () => {
         navigate("/login");
     };
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        setToken("")
+      }
     const handlePricing = () => {
         navigate("/pricing");
     };
@@ -332,9 +339,9 @@ const Navbar = () => {
                         background: "#00b289",
                         color: "white",
                     }}
-                    onClick={handleLogin}
+                    onClick={token ? handleLogout:handleLogin}
                     >
-                    Log In
+                    {token ? "Logout" : "Login"}
                 </Button>
                 <Button
                     className={style.btn2}
