@@ -9,6 +9,9 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.get("/",(req,res)=>{
+    res.send("Home is coming soon!")
+})
 app.use("/users",userRouter)
 app.get("/",(req,res)=>{
     res.send("at Home")

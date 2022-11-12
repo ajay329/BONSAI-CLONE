@@ -17,13 +17,14 @@ import { FooterLogin } from "./FooterLogin";
 import { useNavigate } from "react-router-dom";
 import { LoginNavbar } from "./LoginNavbar";
 import Axios from "axios";
+const initalState = {
+  email: "",
+  password: "",
+}
 export const Login = () => {
   const navigate = useNavigate();
   const url = "https://embarrassed-trousers-ant.cyclic.app/users/login";
-  const [data, setData] = useState({
-    email: "",
-    password: "",
-  });
+  const [data, setData] = useState(initalState);
 
   async function submit(e) {
     e.preventDefault();
@@ -35,6 +36,7 @@ export const Login = () => {
         console.log(res.data);
         alert("Logged In Successfully")
         localStorage.setItem("token", res.data.token);
+        setData(initalState)
         navigate("/");
       })
       .catch((err) => {
