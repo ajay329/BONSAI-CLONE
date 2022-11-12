@@ -444,7 +444,7 @@ const intialData = {
 };
 export const SignUp = () => {
   const navigate = useNavigate();
-  const url = "https://embarrassed-trousers-ant.cyclic.app/users/signup";
+  const url = "https://bontime-back.onrender.com/users/signup";
   const [data, setData] = useState(intialData);
 
   async function submit(e) {
