@@ -1,11 +1,13 @@
 import {Box, Button, Heading, Image, SimpleGrid, Text} from "@chakra-ui/react"
-export function BonsaiCash(){
+import Footer from "../../components/Footer/Footer"
+import Navbar from "../../components/Navbar/Navbar"
+export default function BonsaiCash(){
     return(
         <>
         <Navbar />
-        <Box  height="auto" pt={['80px']} border='1px solid black'>
-            <Box pt={['80px']}   border='1px solid black'  backgroundImage={'url(https://i.postimg.cc/jjkjjYc1/plain-image.png)'} backgroundRepeat="no-repeat" h={['auto']} backgroundSize="100%">
-                <Box  border='1px solid black'  w={['90%','86%','86%','86%']} ml={['5%','7%','7%','7%']}>
+        <Box  height="auto" >
+            <Box pt={['80px']}     backgroundImage={'url(https://i.postimg.cc/jjkjjYc1/plain-image.png)'} backgroundRepeat="no-repeat" h={['auto']} backgroundSize="100%">
+                <Box   w={['90%','86%','86%','86%']} ml={['5%','7%','7%','7%']}>
                     <Heading  fontSize={['24px','24px','2rem','2rem']} textAlign={['center']}>
                         One account
                         <br />
@@ -16,13 +18,13 @@ export function BonsaiCash(){
                     <br />
                     All with no hidden fees and no minimums.
                     </Text>
-                    <Box border={'1px solid black'} display='flex' justifyContent={'center'}>
+                    <Box  display='flex' justifyContent={'center'}>
                     <Button   pt={['20px','20px','20px','20px']} pb={['20px','20px','20px','20px']} pl={['100px','20px','20px','20px']} pr={['100px','20px','20px','20px']}  mt={['25px']} color={'rgb(255,255,236)'} bg={'rgb(0,178,137)'} _hover={{bg:"rgb(26,59,65)"}}>Sign up</Button>
 
                     </Box>                    
 
                 </Box>
-                <Box  border='1px solid black'  h={['','250px','300px','450px']} mt={['','0px','100px','0px']}>
+                <Box    h={['','250px','300px','450px']} mt={['','0px','100px','0px']}>
                         <Image  src="https://i.postimg.cc/ZRfpp251/card-holding-hand.png" w={['100%']} h={['','100%','100%','100%']} />
                 </Box>
 

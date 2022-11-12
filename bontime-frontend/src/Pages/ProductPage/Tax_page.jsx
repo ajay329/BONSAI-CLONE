@@ -1,5 +1,7 @@
-import {Box, Button, Heading, Image, Input, InputGroup, InputRightElement, SimpleGrid, Text} from "@chakra-ui/react"
-export function BonsaiTax(){
+import {Box, Button, Heading,Center, Image, Input, InputGroup, InputRightElement, SimpleGrid, Text} from "@chakra-ui/react"
+import Footer from "../../components/Footer/Footer"
+import Navbar from "../../components/Navbar/Navbar"
+export default function BonsaiTax(){
     return(
        <>
        <Navbar />

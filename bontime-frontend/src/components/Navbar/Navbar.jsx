@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 import data from "./data.json";
 import { ComponentModel } from "./ComponentModel";
 import style from './Navbar.module.css';
-import logo from '../../Assets/Logo/logo.png';
+import logo from '../../assets/Logo/logo.png';
 
 const Navbar = () => {
     const navigate = useNavigate();
