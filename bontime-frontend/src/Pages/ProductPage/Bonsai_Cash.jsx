@@ -1,5 +1,5 @@
 import {Box, Button, Heading, Image, SimpleGrid, Text} from "@chakra-ui/react"
-export function BonsaiCash(){
+export default function BonCash(){
     return(
         <Box  height="auto">
             <Box position={['relative']}  backgroundImage={'url(https://i.postimg.cc/jjkjjYc1/plain-image.png)'} backgroundRepeat="no-repeat" h={['auto']} backgroundSize="100%">

@@ -1,5 +1,5 @@
 import {Box, Button, Heading, Image, Input, InputGroup, InputRightElement, SimpleGrid, Text} from "@chakra-ui/react"
-export function BonsaiTax(){
+export default function BonTax(){
     return(
         <Box  height="auto" >
             <Box h={['auto']}  >

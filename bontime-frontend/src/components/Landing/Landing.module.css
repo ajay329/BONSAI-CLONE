@@ -522,3 +522,17 @@
     font-size: 1rem;
   }
   
+.e{
+    color: #01b289;
+    font-weight: 500;
+}
+.upperDivSub{
+    justify-content: left;
+    text-align:justify;
+    padding-left: 5%;
+    opacity: .8;
+}
+.lowerDivSub{
+    justify-content: right;
+    text-align:right;  
+}
