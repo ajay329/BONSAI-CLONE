@@ -4,7 +4,6 @@ import "../../Components/Article.css";
 // import Navbar from "../../Navbar/Navbar";
 import {
   Box,
-  Container,
   Grid,
   Heading,
   Image,

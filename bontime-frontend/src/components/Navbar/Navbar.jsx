@@ -19,132 +19,163 @@ import logo from '../../assets/Logo/logo.png';
 const Navbar = () => {
     const navigate = useNavigate();
 
-  const handleLogin = () => {
-    navigate("/login");
-  };
-  const handleReview = () => {
-    navigate("/review");
-  };
-  const handlePricing = () => {
-    navigate("/pricing");
-  }
-  const handleHome = () => {
-    navigate("/");
-  };
-  const handleBonTax = () => {
-    navigate("/bonTax");
-}
-const handleBonCash = () => {
-    navigate("/bonCash")
-}
+    const handleHome = () => {
+        navigate("/");
+    };
+    const handleLogin = () => {
+        navigate("/login");
+    };
+    const handlePricing = () => {
+        navigate("/pricing");
+    };
+    const handleReview = () => {
+        navigate("/reviews");
+    };
+    const handleBonTax = () => {
+        navigate("/bonTax");
+    };
+    const handleBonCash = () => {
+        navigate("/bonCash")
+    };
+    const handleFreeContract = () => {
+        navigate("/freeContract")
+    };
+    // const handleDigitalMarketing = () => {
+    //     navigate("/digitalMarketingContract")
+    // };
+    // const handleGraphicDesign = () => {
+    //     navigate("/graphicDesignContract")
+    // };
+    // const handleSocial = () => {
+    //     navigate("/socialMediaContract")
+    // };
+    const handleAgreement = () => {
+        navigate("/agreementTemplate")
+    };
+    const handleBrief = () => {
+        navigate("/briefTemplate")
+    };
+    const handleInvoice = () => {
+        navigate("/invoiceTemplate")
+    };
+    const handleProposal = () => {
+        navigate("/propasalTemplate")
+    };
+    const handleQuotes = () => {
+        navigate("/quotesTemplate")
+    };
+    const handleScope = () => {
+        navigate("/scopeOfWorkTemplate")
+    };
 
-const [dat, setData] = useState([{}]);
+    const [dat, setData] = useState([{}]);
 
-useEffect(() => {
-    const toggleProductUp = (element) => {
-    element.style.display = "block";
-    element.addEventListener("mouseover", () => {
+    useEffect(() => {
+        const toggleProductUp = (element) => {
         element.style.display = "block";
-    });
-    element.addEventListener("mouseout", () => {
-        element.style.display = "none";
-    });
-    };
-    const togglethirdUp = (element) => {
-    element.style.display = "flex";
-    element.addEventListener("mouseover", () => {
+        element.addEventListener("mouseover", () => {
+            element.style.display = "block";
+        });
+        element.addEventListener("mouseout", () => {
+            element.style.display = "none";
+        });
+        };
+        const togglethirdUp = (element) => {
         element.style.display = "flex";
-    });
-    element.addEventListener("mouseout", () => {
+        element.addEventListener("mouseover", () => {
+            element.style.display = "flex";
+        });
+        element.addEventListener("mouseout", () => {
+            element.style.display = "none";
+        });
+        };
+        const toggleProductUpOff = (element) => {
         element.style.display = "none";
-    });
-    };
-    const toggleProductUpOff = (element) => {
-    element.style.display = "none";
-    };
+        };
 
-    let text1 = document.getElementById("text1");
-    if (text1) {
-    text1.addEventListener("mouseover", () => {
+        let text1 = document.getElementById("text1");
+        if (text1) {
+        text1.addEventListener("mouseover", () => {
+            setData(data[0]);
+        });
+        }
+        let text2 = document.getElementById("text2");
+        if (text2) {
+        text2.addEventListener("mouseover", () => {
+            setData(data[1]);
+        });
+        }
+        let text3 = document.getElementById("rd");
+        if (text3) {
+        text3.addEventListener("mouseover", () => {
+            setData(data[2]);
+        });
+        }
+        let text4 = document.getElementById("4th");
+        if (text4) {
+        text4.addEventListener("mouseover", () => {
+            setData(data[3]);
+        });
+        }
+        let text5 = document.getElementById("5th");
+        if (text5) {
+        text5.addEventListener("mouseover", () => {
+            setData(data[4]);
+        });
+        }
+        let text6 = document.getElementById("6th");
+        if (text6) {
+        text6.addEventListener("mouseover", () => {
+            setData(data[5]);
+        });
+        }
+        let text7 = document.getElementById("7th");
+        if (text7) {
+        text7.addEventListener("mouseover", () => {
+            setData(data[6]);
+        });
+        }
+
+        let first = document.getElementById("1st");
+        let second = document.getElementById("1st_dropdown");
+
+        if (first) {
+        first.addEventListener("mouseover", () => {
+            toggleProductUp(second);
+        });
+        first.addEventListener("mouseout", () => {
+            toggleProductUpOff(second);
+        });
+        }
+
+        let third = document.getElementById("2nd");
+        let fourth = document.getElementById("2nd_dropdown");
+
+        if (third) {
+        fourth.style.display = "none";
+        third.addEventListener("mouseover", () => {
+            togglethirdUp(fourth);
+        });
+        third.addEventListener("mouseout", () => {
+            toggleProductUpOff(fourth);
+        });
+        }
+    }, []);
+
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
+    useEffect(() => {
         setData(data[0]);
-    });
-    }
-    let text2 = document.getElementById("text2");
-    if (text2) {
-    text2.addEventListener("mouseover", () => {
-        setData(data[1]);
-    });
-    }
-    let text3 = document.getElementById("rd");
-    if (text3) {
-    text3.addEventListener("mouseover", () => {
-        setData(data[2]);
-    });
-    }
-    let text4 = document.getElementById("4th");
-    if (text4) {
-    text4.addEventListener("mouseover", () => {
-        setData(data[3]);
-    });
-    }
-    let text5 = document.getElementById("5th");
-    if (text5) {
-    text5.addEventListener("mouseover", () => {
-        setData(data[4]);
-    });
-    }
-    let text6 = document.getElementById("6th");
-    if (text6) {
-    text6.addEventListener("mouseover", () => {
-        setData(data[5]);
-    });
-    }
-    let text7 = document.getElementById("7th");
-    if (text7) {
-    text7.addEventListener("mouseover", () => {
-        setData(data[6]);
-    });
-    }
-
-    let first = document.getElementById("1st");
-    let second = document.getElementById("1st_dropdown");
-
-    if (first) {
-    first.addEventListener("mouseover", () => {
-        toggleProductUp(second);
-    });
-    first.addEventListener("mouseout", () => {
-        toggleProductUpOff(second);
-    });
-    }
-    let third = document.getElementById("2nd");
-    let fourth = document.getElementById("2nd_dropdown");
-
-    if (third) {
-    fourth.style.display = "none";
-    third.addEventListener("mouseover", () => {
-        togglethirdUp(fourth);
-    });
-    third.addEventListener("mouseout", () => {
-        toggleProductUpOff(fourth);
-    });
-    }
-}, []);
-
-const { isOpen, onOpen, onClose } = useDisclosure();
-
-useEffect(() => {
-    setData(data[0]);
-}, []);
+    }, []);
 
 
     return (
         <Box className={style.nav}>
         <Box className={style.main}>
             <Box
-            pl="10%"
+            pl="8%"
             pt="1%"
-            pr="10%"
+            pr="8%"
             w="100%"
             justifyContent="space-between"
             display="flex"
@@ -157,26 +188,25 @@ useEffect(() => {
                 icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                 aria-label={"Open Menu"}
                 display={{ lg: "none" }}
-                justify="end"
+                justify="start"
                 onClick={isOpen ? onClose : onOpen}
             />
             {isOpen ? (
                 <Box mt="70px" w="100%" boxShadow="md" display={{ lg: "none" }}>
                     <Stack
-                        pt="15%"
+                        pt="10%"
                         pb="25%"
-                        pl="130%"
+                        pl="100%"
                         justify="center"
                         opacity={".97"}
                         boxShadow="md"
                         ml="-100%"
                         fontSize={"1.5rem"}
-                        w="350%"
+                        w="200%"
                         bg="white"
                         spacing={4}
                     >
-                        <Box 
-                        justify="center" 
+                        <Box
                         _hover={{
                                 cursor: "pointer",
                             }}
@@ -400,7 +430,7 @@ useEffect(() => {
                             width="20px"
                             height="20px"
                         />
-                        <Box className={style.left_item_title}>Contract Templates</Box>
+                        <Box className={style.left_item_title} onClick={handleFreeContract}>Contract Templates</Box>
                     </Flex>
                 </Box>
                 
@@ -420,7 +450,7 @@ useEffect(() => {
                             width="20px"
                             height="20px"
                         />
-                        <Box className={style.left_item_title}>Proposal Templates</Box>
+                        <Box className={style.left_item_title} onClick={handleProposal}>Proposal Templates</Box>
                     </Flex>
                 </Box>
                 
@@ -440,7 +470,7 @@ useEffect(() => {
                             width="20px"
                             height="20px"
                         />
-                        <Box className={style.left_item_title}>Invoice Templates</Box>
+                        <Box className={style.left_item_title} onClick={handleInvoice}>Invoice Templates</Box>
                         </Flex>
                 </Box>
                 
@@ -460,7 +490,7 @@ useEffect(() => {
                             width="20px"
                             height="20px"
                         />
-                        <Box className={style.left_item_title}>Agreement Templates</Box>
+                        <Box className={style.left_item_title} onClick={handleAgreement}>Agreement Templates</Box>
                     </Flex>
                 </Box>
                 
@@ -480,7 +510,7 @@ useEffect(() => {
                             width="20px"
                             height="20px"
                         />
-                        <Box className={style.left_item_title}>Quotes Templates</Box>
+                        <Box className={style.left_item_title} onClick={handleQuotes}>Quotes Templates</Box>
                     </Flex>
                 </Box>
                 
@@ -500,7 +530,7 @@ useEffect(() => {
                             width="20px"
                             height="20px"
                         />
-                        <Box className={style.left_item_title}>Scope of work Templates</Box>
+                        <Box className={style.left_item_title} onClick={handleScope}>Scope of work Templates</Box>
                     </Flex>
                 </Box>
                 
@@ -520,7 +550,7 @@ useEffect(() => {
                             width="20px"
                             height="20px"
                         />
-                        <Box className={style.left_item_title}>Brief Template</Box>
+                        <Box className={style.left_item_title} onClick={handleBrief}>Brief Template</Box>
                     </Flex>
                 </Box>
             </Box>
@@ -531,6 +561,10 @@ useEffect(() => {
                 ) : (
                 <ComponentModel item={data[0]} />
                 )}
+                {/* {data[0] === {a1} ? (onClick={handleFreeContract}) : undefined}
+                {data[0] === {a2} ? (onClick={handleSocial}) : undefined}
+                {data[0] === {a3} ? (onClick={handleGraphicDesign}) : undefined}
+                {data[0] === {a4} ? (onClick={handleDigitalMarketing}) : undefined} */}
             </Box>
         </Box>
         </Box>

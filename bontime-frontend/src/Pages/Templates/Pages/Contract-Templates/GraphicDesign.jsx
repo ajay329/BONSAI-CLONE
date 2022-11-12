@@ -4,7 +4,6 @@ import "../../Components/Article.css";
 
 import {
   Box,
-  Container,
   Grid,
   Heading,
   Image,

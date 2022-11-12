@@ -14,6 +14,7 @@
     padding: 10px 0;
     position: relative;
     z-index: 1000;
+    background: #fff;
 }
 
 .main:after, .main:before {
@@ -158,6 +159,7 @@
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 /* ---------------Product dropdown--------- */
