@@ -14,13 +14,14 @@ import {
 import SignupTemplate from "../../Components/SignupTemplate";
 import RelatedTemplates from "../../Components/RelatedTemplates";
 import Footer from "../../../../components/Footer/Footer";
+import NavLogo from "../../Components/NavLogo";
 
 function InfluncerAgreement() {
   const heading = "Free Influencer Contract Template";
   const desc = "with a bulletproof template & simple e-signing";
   return (
-    <Box>
-      {/* <Navbar/> */}
+    <Box id="mainContainer">
+      <NavLogo/>
 
       <TopSection heading={heading} desc={desc} />
       <Box fontFamily="Proximanova opt sans-serif" mb="5rem">
@@ -443,8 +444,8 @@ function InfluncerAgreement() {
       </Box>
       <SignupTemplate />
       <RelatedTemplates />
-      <Box m="auto" textAlign="center"  bg="blackAlpha.900" w="100%" pt={20} sm={{h:"100vh"}}>
-        <Box>
+      <Box m="auto"   bg="blackAlpha.900" w="100%" pt={10} sm={{h:"100vh"}}>
+        <Box ml={20}>
           <Footer />
 
         </Box>

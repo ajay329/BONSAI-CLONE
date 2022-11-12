@@ -1,5 +1,18 @@
+*{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    background-image: linear-gradient(90deg,green,blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+}
+
 a:hover{
-    text-decoration: underline;
+    background-size: 100% 3px;
     }
 
 #para{
@@ -13,7 +26,15 @@ a:hover{
     font-size: 2em;
     color: black;
     padding-bottom: 0.2rem;
-    
+    text-decoration: none;
+    background-image: linear-gradient(90deg,red,blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+}
+.Hfsize:hover{
+    background-size: 90% 3px;
 }
 .subH{
    font-weight: 900;

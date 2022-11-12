@@ -4,6 +4,8 @@ import RelatedTemplates from "../../Components/RelatedTemplates";
 import Footer from "../../../../components/Footer/Footer";
 import TopSection from "../../Components/TopSection";
 import "../../Components/Article.css";
+import NavLogo from "../../Components/NavLogo";
+
 import {
   Box,
   Heading,
@@ -19,6 +21,8 @@ function DesignBrief() {
   const desc = "with estimates, read receipt notifications, e-approval and deposits";
   return (
     <>
+      <NavLogo/>
+
       <TopSection heading={heading} desc={desc} />
       <Box fontFamily="Proximanova opt sans-serif" mb="5rem">
         <Grid
@@ -286,8 +290,8 @@ function DesignBrief() {
       </Box>
       <SignupTemplate/>
       <RelatedTemplates/>
-      <Box m="auto" textAlign="center"  bg="blackAlpha.900" w="100%" pt={20} sm={{h:"100vh"}}>
-        <Box>
+      <Box m="auto"   bg="blackAlpha.900" w="100%" pt={10} sm={{h:"100vh"}}>
+        <Box ml={20}>
           <Footer />
 
         </Box>
