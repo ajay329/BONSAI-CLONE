@@ -82,12 +82,7 @@ its Fully Responsive social media post scheduler web application that allows you
 <br />
 
 
-## 🚀 Admin Features ----Still working On
-- All Statistics
-- All Users Data
-- Can Delete User From DB
-- Can Add User to DB
-- Can Delete User Blogs
+
  
 ## 🚀 User Features
 - Login and Signup User Account
