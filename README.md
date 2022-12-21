@@ -51,7 +51,7 @@ As part of our construct week for group project in Unit 5 at Masai School, we we
 
 
 
-<h3 align="center"><a href="https://ecotone77.netlify.app/"><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href="https://eclectic-halva-300fe0.netlify.app/"><strong>Want to see live preview »</strong></a></h3>
 
 
 <br />
@@ -102,7 +102,7 @@ As part of our construct week for group project in Unit 5 at Masai School, we we
 
 
 # PROJECT NETLIFY LINK
-https://ecotone77.netlify.app/
+https://eclectic-halva-300fe0.netlify.app/
 
 
 ### Tools used on this project
