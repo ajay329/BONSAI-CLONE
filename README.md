@@ -137,8 +137,6 @@ https://ecotone77.netlify.app/
 - Visual Studio Code
 - Vite-JS template
 
-<br />
- <p class="c0"><span class="c3">Tools Used -</span></p>
   <ul class="c2 lst-kix_qfofq4qcdhuv-0 start">
     <li class="c7 li-bullet-0">
       <span class="c5">Github for code collaboration.</span>
