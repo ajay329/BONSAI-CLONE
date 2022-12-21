@@ -98,33 +98,6 @@ As part of our construct week for group project in Unit 5 at Masai School, we we
 
 
 
-
-  <p class="c0"><span class="c3">Tools Used -</span></p>
-  <ul class="c2 lst-kix_qfofq4qcdhuv-0 start">
-    <li class="c7 li-bullet-0">
-      <span class="c5">Github for code collaboration.</span>
-    </li>
-    <li class="c8 li-bullet-0">
-      <span class="c5">Slack and Zoom for communication.</span>
-    </li>
-  </ul>
-  <p class="c0"><span class="c3">Learnings -</span></p>
-  <p class="c0">
-    <span class="c5"
-      >We all learned how a team works and how to efficiently communicate when
-      working in a team. Each one of us learned to push our limits and work hard
-      each day through all the problems we faced. Also, Each one of us learned
-      how to be solution-oriented and try different methods to solve the problem
-      rather than being stuck on that problem. Last, I would like to mention
-      that all of us did our very best to create this project and we are
-      thankful for the guidance and support our mentors provided us.</span
-    >
-  </p>
-
-<br />
-
-
-
 <br />
 
 
