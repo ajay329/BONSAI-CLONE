@@ -18,7 +18,7 @@ import {
   // AlertTitle,
 } from "@chakra-ui/react";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsEyeFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import styles from "./Auth.module.css";
@@ -479,7 +479,12 @@ export const SignUp = () => {
     setData(newData);
     // console.log(newData);
   }
-
+  useEffect(()=>{
+    const token = localStorage.getItem('token');
+    if(token){
+      navigate("/")
+    }
+    },[])
   return (
     <>
       <Box w={["100%", "100%", "100%", "75%"]} m="50px auto" p="0px 40px">

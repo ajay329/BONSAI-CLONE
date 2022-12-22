@@ -29,10 +29,10 @@ const Navbar = () => {
     navigate("/login");
   };
   const handleLogout = () => {
-    localStorage.removeItem("token");
-    setToken("");
     toast.success("Logged out successfully");
     setTimeout(() => {
+      localStorage.removeItem("token");
+      setToken("");
       navigate("/login");
     }, 2000);
   };

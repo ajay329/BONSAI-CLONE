@@ -18,6 +18,7 @@ import { FooterLogin } from "./FooterLogin";
 import { useNavigate } from "react-router-dom";
 import { LoginNavbar } from "./LoginNavbar";
 import Axios from "axios";
+import { useEffect } from "react";
 const initalState = {
   email: "",
   password: "",
@@ -53,7 +54,13 @@ export const Login = () => {
     newData[e.target.id] = e.target.value;
     setData(newData);
     console.log(newData);
+  } 
+  useEffect(()=>{
+  const token = localStorage.getItem('token');
+  if(token){
+    navigate("/")
   }
+  },[])
 
   return (
     <div>
