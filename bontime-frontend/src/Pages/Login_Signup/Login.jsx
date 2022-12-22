@@ -38,8 +38,8 @@ export const Login = () => {
         console.log(res.data);
         toast.success("Logged In Successfully");
         localStorage.setItem("token", res.data.token);
-        setData(initalState);
         setTimeout(() => {
+          setData(initalState);
           navigate("/");
         }, 2000);
       })
@@ -54,13 +54,13 @@ export const Login = () => {
     newData[e.target.id] = e.target.value;
     setData(newData);
     console.log(newData);
-  } 
-  useEffect(()=>{
-  const token = localStorage.getItem('token');
-  if(token){
-    navigate("/")
   }
-  },[])
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/");
+    }
+  }, []);
 
   return (
     <div>
@@ -315,7 +315,7 @@ export const Login = () => {
               >
                 Log in
               </Button>
-              <Toaster/>
+              <Toaster />
             </form>
             <br />
             <br />

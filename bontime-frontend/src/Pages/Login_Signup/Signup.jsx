@@ -462,8 +462,8 @@ export const SignUp = () => {
       .then((res) => {
         // console.log(res.data);
         toast.success("SignUp successful!");
-        setData(intialData);
         setTimeout(() => {
+          setData(intialData);
           navigate("/login");
         }, 2000);
       })
