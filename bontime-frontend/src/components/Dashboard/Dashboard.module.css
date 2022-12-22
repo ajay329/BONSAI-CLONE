@@ -1,0 +1,22 @@
+li:nth-child(odd) {
+    border-radius: 50%;
+    border: 1px solid #50b289;
+    color: #50b289;
+    list-style: none;
+    text-align: center;
+    height: 28px;
+    width: 28px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li:nth-child(even) {
+    border-left: 1px solid #50b289;
+    list-style: none;
+    height: 20px;
+    margin-left: 50%;
+  }
+  
+ 
+ 
