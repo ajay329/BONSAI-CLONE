@@ -13,10 +13,10 @@ app.post("/login", async (req, res) => {
           token: `${email}:${password}`,
         });
       } else {
-        res.status(401).send("Authentication failed, Incorrect password");
+        res.status(404).send("Authentication failed, Incorrect password");
       }
     } else {
-      res.status(401).send(`User with  email:${email} not found`);
+      res.status(404).send(`User with  email:${email} not found`);
     }
   } catch (e) {
     res.status(404).send(e.message);

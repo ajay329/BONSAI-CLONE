@@ -18,6 +18,7 @@ import { FooterLogin } from "./FooterLogin";
 import { useNavigate } from "react-router-dom";
 import { LoginNavbar } from "./LoginNavbar";
 import Axios from "axios";
+import { BiErrorCircle } from "react-icons/bi";
 import { useEffect } from "react";
 const initalState = {
   email: "",
@@ -25,11 +26,10 @@ const initalState = {
 };
 export const Login = () => {
   const navigate = useNavigate();
-  const url = "https://bontimebackend.onrender.com/users/login";
+  const url = "https://morning-violet-5198.fly.dev/users/login";
   const [data, setData] = useState(initalState);
 
   async function submit(e) {
-    
     e.preventDefault();
     await Axios.post(url, {
       email: data.email,
@@ -37,8 +37,18 @@ export const Login = () => {
     })
       .then((res) => {
         console.log(res.data);
-        toast.success("Logged In Successfully");
-        
+        toast.success("Logged In Successfully", {
+          style: {
+            border: "1px solid #713200",
+            padding: "16px",
+            color: "#713200",
+          },
+          iconTheme: {
+            primary: "#713200",
+            secondary: "#FFFAEE",
+          },
+        });
+
         localStorage.setItem("token", res.data.token);
         setTimeout(() => {
           setData(initalState);
@@ -47,8 +57,17 @@ export const Login = () => {
       })
       .catch((err) => {
         console.log(err);
-        
-        toast.error("Invalid Credential");
+
+        toast.error("Invalid Credential", {
+          icon: <BiErrorCircle />,
+          style: {
+            border: "1px solid red",
+            backgroundColor:"white",
+            padding: "12px",
+            color: "red",
+            fontSize:"20px"
+          },
+        });
       });
   }
 

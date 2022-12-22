@@ -445,7 +445,7 @@ const intialData = {
 };
 export const SignUp = () => {
   const navigate = useNavigate();
-  const url = "https://bontimebackend.onrender.com/users/signup";
+  const url = "https://morning-violet-5198.fly.dev/users/signup";
   const [data, setData] = useState(intialData);
 
   async function submit(e) {
