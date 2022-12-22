@@ -1,3 +1,4 @@
+import toast, { Toaster } from "react-hot-toast";
 import {
   Box,
   Button,
@@ -444,13 +445,13 @@ const intialData = {
 };
 export const SignUp = () => {
   const navigate = useNavigate();
-  const url = "https://bontime-back.onrender.com/users/signup";
+  const url = "https://bontimebackend.onrender.com/users/signup";
   const [data, setData] = useState(intialData);
 
   async function submit(e) {
     const { email, name, password, country, currency } = data;
     e.preventDefault();
-   
+
     await Axios.post(url, {
       email,
       name,
@@ -460,13 +461,15 @@ export const SignUp = () => {
     })
       .then((res) => {
         // console.log(res.data);
-        alert("SignUp Sucessful!");
-        navigate("/login");
-        setData(intialData)
+        toast.success("SignUp successful!");
+        setData(intialData);
+        setTimeout(() => {
+          navigate("/login");
+        }, 2000);
       })
       .catch((err) => {
         // console.log(err);
-        alert(err.message);
+        toast.error(err.message);
       });
   }
 
@@ -746,6 +749,7 @@ export const SignUp = () => {
                   Create Free Account
                 </Button>
               </Box>
+              <Toaster />
             </form>
 
             <Text

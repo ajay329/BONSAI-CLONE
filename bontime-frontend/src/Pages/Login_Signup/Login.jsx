@@ -11,6 +11,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import toast, { Toaster } from "react-hot-toast";
 import React, { useState } from "react";
 import styles from "./Auth.module.css";
 import { FooterLogin } from "./FooterLogin";
@@ -20,10 +21,10 @@ import Axios from "axios";
 const initalState = {
   email: "",
   password: "",
-}
+};
 export const Login = () => {
   const navigate = useNavigate();
-  const url = "https://bontime-back.onrender.com/users/login";
+  const url = "https://bontimebackend.onrender.com/users/login";
   const [data, setData] = useState(initalState);
 
   async function submit(e) {
@@ -34,14 +35,16 @@ export const Login = () => {
     })
       .then((res) => {
         console.log(res.data);
-        alert("Logged In Successfully")
+        toast.success("Logged In Successfully");
         localStorage.setItem("token", res.data.token);
-        setData(initalState)
-        navigate("/");
+        setData(initalState);
+        setTimeout(() => {
+          navigate("/");
+        }, 2000);
       })
       .catch((err) => {
         console.log(err);
-        alert("Invalid Credential");
+        toast.error("Invalid Credential");
       });
   }
 
@@ -173,8 +176,18 @@ export const Login = () => {
             </HStack>
 
             <VStack>
-              <Box borderTop={"0.2px solid #000"} bg="#FCFCFC" color={"#c8c8c8"} fontSize={"sm"} w="100%">
-               <span style={{textDecoration: "underline"}}>Bonsai updates</span>  powered by <span style={{textDecoration: "underline"}}> Headway</span>
+              <Box
+                borderTop={"0.2px solid #000"}
+                bg="#FCFCFC"
+                color={"#c8c8c8"}
+                fontSize={"sm"}
+                w="100%"
+              >
+                <span style={{ textDecoration: "underline" }}>
+                  Bonsai updates
+                </span>{" "}
+                powered by{" "}
+                <span style={{ textDecoration: "underline" }}> Headway</span>
               </Box>
             </VStack>
           </Box>
@@ -295,6 +308,7 @@ export const Login = () => {
               >
                 Log in
               </Button>
+              <Toaster/>
             </form>
             <br />
             <br />
