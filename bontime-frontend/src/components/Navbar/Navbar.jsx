@@ -349,18 +349,20 @@ const Navbar = () => {
             >
               {token ? "Logout" : "Login"}
             </Button>
-            <Button
-              className={style.btn2}
-              background="#00b289"
-              color="white"
-              _hover={{
-                background: "#00b289",
-                color: "white",
-              }}
-              onClick={handleLogin}
-            >
-              Start Free
-            </Button>
+            <Box display={token ? "none":'block'}>
+              <Button
+                className={style.btn2}
+                background="#00b289"
+                color="white"
+                _hover={{
+                  background: "#00b289",
+                  color: "white",
+                }}
+                onClick={handleLogin}
+              >
+                Start Free
+              </Button>
+            </Box>
           </Box>
           <Toaster />
         </Box>

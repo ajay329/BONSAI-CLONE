@@ -29,6 +29,7 @@ export const Login = () => {
   const [data, setData] = useState(initalState);
 
   async function submit(e) {
+    
     e.preventDefault();
     await Axios.post(url, {
       email: data.email,
@@ -37,6 +38,7 @@ export const Login = () => {
       .then((res) => {
         console.log(res.data);
         toast.success("Logged In Successfully");
+        
         localStorage.setItem("token", res.data.token);
         setTimeout(() => {
           setData(initalState);
@@ -45,6 +47,7 @@ export const Login = () => {
       })
       .catch((err) => {
         console.log(err);
+        
         toast.error("Invalid Credential");
       });
   }
