@@ -4,26 +4,6 @@ const jwt = require("jsonwebtoken");
 const argon2 = require("argon2");
 const app = express.Router();
 
-// app.post("/login", async (req, res) => {
-//   const { email, password } = req.body;
-
-//   try {
-//     let user = await User.findOne({ email });
-//     if (user) {
-//       if (password === user.password) {
-//         res.status(200).send({
-//           token: `${email}:${password}`,
-//         });
-//       } else {
-//         res.status(404).send("Authentication failed, Incorrect password");
-//       }
-//     } else {
-//       res.status(404).send(`User with  email:${email} not found`);
-//     }
-//   } catch (e) {
-//     res.status(404).send(e.message);
-//   }
-// });
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
@@ -43,7 +23,7 @@ app.post("/login", async (req, res) => {
       return res.status(200).send({
         message: "Login success",
         token,
-        refreshToken
+        refreshToken,
       });
     }
   } catch (err) {
