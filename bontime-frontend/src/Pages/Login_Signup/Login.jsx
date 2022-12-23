@@ -26,7 +26,9 @@ const initalState = {
 };
 export const Login = () => {
   const navigate = useNavigate();
+
   const url = "https://morning-violet-5198.fly.dev/users/login";
+
   const [data, setData] = useState(initalState);
 
   async function submit(e) {
