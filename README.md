@@ -3,14 +3,18 @@
 <h3 align="center">Bonsai is building the global operating system for freelance work.The way the world works is changing.
 
 Companies want on-demand talent rather than full time employees. Workers want flexible and independent careers. This is one of the largest socio-economic shifts since the Industrial Revolution.
-
 As part of our construct week for group project in Unit 5 at Masai School, we were given to build the clone of the hellobonsai website.</h3>
 
 <br />
 In the project directory, you can run:
 <br />
-### `npm  install`
-### `npm start`
+<p align="left">
+ `npm  install`
+ </p>
+ <br />
+ <p align="left">
+npm start
+</p>
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
