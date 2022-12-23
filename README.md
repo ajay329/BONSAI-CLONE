@@ -83,7 +83,7 @@ You may also see any lint errors in the console.
 - MD Furqan
 - Rakesh Yadav
 - Monojit Mondal
--  Mujtaba
+- MD Ali Mujtaba
 
 
 
