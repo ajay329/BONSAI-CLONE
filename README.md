@@ -8,13 +8,12 @@ As part of our construct week for group project in Unit 5 at Masai School, we we
 <br />
 In the project directory, you can run:
 <br />
-<p align="left">
- `npm  install`
- </p>
- <br />
- <p align="left">
+<h5 align="left">
+ npm  install
+ </h5>
+ <h5 align="left">
 npm start
-</p>
+</h5>
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
