@@ -1,3 +1,4 @@
+import toast, { Toaster } from "react-hot-toast";
 import {
   Box,
   Button,
@@ -17,7 +18,7 @@ import {
   // AlertTitle,
 } from "@chakra-ui/react";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsEyeFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import styles from "./Auth.module.css";
@@ -444,13 +445,15 @@ const intialData = {
 };
 export const SignUp = () => {
   const navigate = useNavigate();
-  const url = "https://bontimebackend.onrender.com/users/signup";
+
+  const url = "https://morning-violet-5198.fly.dev/users/signup";
+
   const [data, setData] = useState(intialData);
 
   async function submit(e) {
     const { email, name, password, country, currency } = data;
     e.preventDefault();
-   
+
     await Axios.post(url, {
       email,
       name,
@@ -460,13 +463,15 @@ export const SignUp = () => {
     })
       .then((res) => {
         // console.log(res.data);
-        alert("SignUp Sucessful!");
-        navigate("/login");
-        setData(intialData)
+        toast.success("SignUp successful!");
+        setTimeout(() => {
+          setData(intialData);
+          navigate("/login");
+        }, 2000);
       })
       .catch((err) => {
         // console.log(err);
-        alert(err.message);
+        toast.error(err.message);
       });
   }
 
@@ -476,7 +481,12 @@ export const SignUp = () => {
     setData(newData);
     // console.log(newData);
   }
-
+  useEffect(()=>{
+    const token = localStorage.getItem('token');
+    if(token){
+      navigate("/")
+    }
+    },[])
   return (
     <>
       <Box w={["100%", "100%", "100%", "75%"]} m="50px auto" p="0px 40px">
@@ -746,6 +756,7 @@ export const SignUp = () => {
                   Create Free Account
                 </Button>
               </Box>
+              <Toaster />
             </form>
 
             <Text
