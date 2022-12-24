@@ -28,6 +28,9 @@ const Navbar = () => {
   const handleLogin = () => {
     navigate("/login");
   };
+  const handleDashboard=()=>{
+    navigate("/dashboard")
+  }
   const handleLogout = () => {
     toast.success("Logged out successfully");
     setTimeout(() => {
@@ -361,6 +364,20 @@ const Navbar = () => {
                 onClick={handleLogin}
               >
                 Start Free
+              </Button>
+            </Box>
+            <Box display={token ? "block":'none'}>
+              <Button
+                className={style.btn2}
+                background="#00b289"
+                color="white"
+                _hover={{
+                  background: "#00b289",
+                  color: "white",
+                }}
+                onClick={handleDashboard}
+              >
+                Dashboard
               </Button>
             </Box>
           </Box>

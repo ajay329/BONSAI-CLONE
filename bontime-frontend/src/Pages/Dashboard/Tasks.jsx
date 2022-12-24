@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import React,{ useState } from 'react';
 import TodoForm from "../../components/Tasks/TodoForm";
 import TodoList from "../../components/Tasks/TodoList";
@@ -43,8 +44,8 @@ const Tasks = () => {
   };
 
   return (
-    <div >
-      <div className="container">
+    <Box >
+      <Box  boxShadow="2xl" className="container">
         <h1>TASK</h1>
         <TodoForm
           handleSubmit={handleSubmit}
@@ -58,8 +59,8 @@ const Tasks = () => {
           handleEdit={handleEdit}
           handleDelete={handleDelete}
         />
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 
