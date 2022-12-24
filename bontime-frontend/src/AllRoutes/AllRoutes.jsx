@@ -17,8 +17,8 @@ import InvoiceTemplate from '../Pages/Templates/Pages/Invoice-Templates/SocialMe
 import ProposalTemplate from '../Pages/Templates/Pages/Proposal-Templates/BusinessProposal';
 import QuotesTemplate from '../Pages/Templates/Pages/Quote-Templates/WebDesignQuote';
 import ScopeofWorkTemplate from '../Pages/Templates/Pages/ScopeOfWork/WebsiteDevScope';
-import Dashboard from '../components/Dashboard/Dashboard';
-import Sidebar from '../components/Dashboard/Sidebar';
+import MainDashboard from '../Pages/Dashboard/MainDashboard';
+
 
 const AllRoutes = () => {
   return (
@@ -30,8 +30,8 @@ const AllRoutes = () => {
         <Route path='/signup' element={<SignUp/>} />
         <Route path='/bonTax' element={<BonTax/>} />
         <Route path='/bonCash' element={<BonCash/>} />
-        <Route path='/dashboard' element={<Dashboard/>} />
-        <Route path='/sidebar' element={<Sidebar/>} />
+        <Route path='/dashboard' element={<MainDashboard/>} />
+       
         <Route path='/freeContract' element={<FreeContractMaker/>} />
         <Route path='/digitalMarketingContract' element={<DigitalMarketingContract/>} />
         <Route path='/graphicDesignContract' element={<GraphicDesignContract/>} />
