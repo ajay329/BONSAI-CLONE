@@ -54,7 +54,7 @@ You may also see any lint errors in the console.
 <h4 align="center">Deployed On:</h4>
 
 <p align="center">
-<a href="eclectic-halva-300fe0.netlify.app/">
+<a href="https://bontime.vercel.app/">
   <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="vercel" />
 </a>  
 <a href="https://mauve-rabbit-gown.cyclic.app/">
@@ -64,7 +64,7 @@ You may also see any lint errors in the console.
 
 
 
-<h3 align="center"><a href="https://eclectic-halva-300fe0.netlify.app/"><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href="https://bontime.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
 
 
 <br />
@@ -113,7 +113,7 @@ You may also see any lint errors in the console.
 
 
 # PROJECT NETLIFY LINK
-https://eclectic-halva-300fe0.netlify.app/
+https://bontime.vercel.app/
 
 
 ### Tools used on this project
