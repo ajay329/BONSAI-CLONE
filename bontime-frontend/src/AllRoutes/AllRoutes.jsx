@@ -17,8 +17,8 @@ import InvoiceTemplate from '../Pages/Templates/Pages/Invoice-Templates/SocialMe
 import ProposalTemplate from '../Pages/Templates/Pages/Proposal-Templates/BusinessProposal';
 import QuotesTemplate from '../Pages/Templates/Pages/Quote-Templates/WebDesignQuote';
 import ScopeofWorkTemplate from '../Pages/Templates/Pages/ScopeOfWork/WebsiteDevScope';
-
-
+import Dashboard from '../components/Dashboard/Dashboard';
+import Sidebar from '../components/Dashboard/Sidebar';
 
 const AllRoutes = () => {
   return (
