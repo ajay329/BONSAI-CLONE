@@ -78,6 +78,9 @@ const Navbar = () => {
   const handleScope = () => {
     navigate("/scopeOfWorkTemplate");
   };
+ const handleDashboard = ()=>{
+    navigate("/dashboard")
+ }
 
   const [dat, setData] = useState([{}]);
 
@@ -361,6 +364,20 @@ const Navbar = () => {
                 onClick={handleLogin}
               >
                 Start Free
+              </Button>
+            </Box>
+            <Box display={token ? "block":'none'}>
+            <Button
+                className={style.btn2}
+                background="#00b289"
+                color="white"
+                _hover={{
+                  background: "#00b289",
+                  color: "white",
+                }}
+                onClick={handleDashboard}
+              >
+                Dashboard
               </Button>
             </Box>
           </Box>
