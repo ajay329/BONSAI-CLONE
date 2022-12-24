@@ -26,7 +26,7 @@ const MainDashboard = () => {
     <Box>  
         <Box p="1em" position="sticky" top="0" left="0" w="100%">
         <Link to="/"> 
-            <Image src={navlogo} h="10%"/>
+            <Image src={navlogo} h={{lg:"10%",md:"10%", base:"2%"}}/>
         </Link>
         </Box>
         <Flex >
@@ -42,6 +42,7 @@ const MainDashboard = () => {
           <IoIosAdd />
         </Stack>
       </Flex>
+      
       <Stack color="#7c7777" justify="space-between">
         <Grid gap={2}>
           
@@ -136,7 +137,7 @@ const MainDashboard = () => {
       </Stack>
     </Grid>
           </Box>
-          <Box  w="80%" position="absolute" left="250px">
+          <Box  w="80%" position="absolute" left="250px" h="auto">
             <Box display={`${title=="Main"?"block":"none"}`}>
               {console.log(title)}
                 <Main/>
