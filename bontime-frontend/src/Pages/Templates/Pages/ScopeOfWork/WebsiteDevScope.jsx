@@ -1,6 +1,7 @@
 import React from "react";
 import TopSection from "../../Components/TopSection";
-import "../../Components/Article.css";
+import style from "../../Components/Article.module.css";
+
 
 import {
   Box,
@@ -104,7 +105,7 @@ function WebsiteDevScope() {
           </Box>
           <Box h="auto"  p="1em 1em">
             <Box id="ScopeWebDev">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 What is the scope of a website development?
               </Text>
               <p id="para">
@@ -114,7 +115,7 @@ function WebsiteDevScope() {
               </p>
             </Box>
             <Box id="SOWSample">
-              <Text className="Hfsize">How do you make a SOW sample?</Text>
+              <Text className={style.Hfsize}>How do you make a SOW sample?</Text>
               <p id="para">
                 Explain the project, clarify the vision or plan. set the project
                 requirements, include deadline of the project, and payment
@@ -123,7 +124,7 @@ function WebsiteDevScope() {
               </p>
             </Box>
             <Box id="ScopeWorkT">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 Is there free web development scope of work templates?
               </Text>
               <p id="para">
@@ -133,7 +134,7 @@ function WebsiteDevScope() {
               </p>
             </Box>
             <Box id="WevDevSOW">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 What is a Website Development Scope of Work?
               </Text>
               <p id="para">
@@ -146,25 +147,25 @@ function WebsiteDevScope() {
                 parties avoid conflict, minimize misunderstandings, and stay on
                 the same page.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 An in-depth scope of work should include:
               </Text>
-              <li className="liP">
+              <li className={style.liP}>
                 Project summary: sums up the key web development details
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Project scope: sets project goals and boundaries
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Deliverables: that specify tangible and intangible project
                 outputs, such as lines of code, coding language, and the
                 associated website
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Project schedule: outlines project start and end dates along
                 with milestones
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Final price: of completing the website development
               </li>
               <p id="para">
@@ -178,7 +179,7 @@ function WebsiteDevScope() {
               </p>
             </Box>
             <Box id="NeedSOW">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 Why do you Need a Website Development Scope of Work Template?
               </Text>
               <p id="para">
@@ -203,22 +204,22 @@ function WebsiteDevScope() {
                 the same page about the work agreement. When it comes to web
                 development, you want to discuss:
               </p>
-              <li className="liP">
+              <li className={style.liP}>
                 Website requirements: that list out desired features, functions,
                 and specifications
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 User interaction: defines how end-users will be using the
                 website
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Communication with stakeholders: specify whom you expect
                 feedback from at different phases
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Limitations: that mention what can’t be achieved in this project
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Management: to have processes in place for managing disagreement
                 and changes in the scope of work
               </li>
@@ -238,7 +239,7 @@ function WebsiteDevScope() {
               </p>
             </Box>
             <Box id="includeSOW">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 What to Include in the Website Development Scope of Work
               </Text>
               <p id="para">
@@ -249,7 +250,7 @@ function WebsiteDevScope() {
               </p>
               Adding the right sections is key to creating an effective scope of
               work–take a look:
-              <Text className="subH">Project summary</Text>
+              <Text className={style.subH}>Project summary</Text>
               <p id="para">
                 This is the first section of your scope of work template. Use
                 this section to offer a brief and concise overview of the
@@ -262,7 +263,7 @@ function WebsiteDevScope() {
                 project requirements and lets prospects know you’ve got
                 everything under control.
               </p>
-              <Text className="subH">Project goals</Text>
+              <Text className={style.subH}>Project goals</Text>
               <p id="para">
                 Project goals clarify what website issues you’re being brought
                 in to resolve. They also show how a new project ties to the
@@ -276,26 +277,26 @@ function WebsiteDevScope() {
                 Achievable, Relevant, and Time-bound (SMART) for project
                 success.
               </p>
-              <Text className="subH">Here’s what they could look like:</Text>
-              <li className="liP">
+              <Text className={style.subH}>Here’s what they could look like:</Text>
+              <li className={style.liP}>
                 Specific: add six new pages to the website
               </li>
-              <li className="liP">Measurable: reduce the site speed by 15%</li>
-              <li className="liP">
+              <li className={style.liP}>Measurable: reduce the site speed by 15%</li>
+              <li className={style.liP}>
                 Achievable: create two new pages every month
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Relevant: help the product marketing team to improve conversion
                 rate by 25%
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Time-bound: complete the whole project within next three months
               </li>
               <p id="para">
                 Having crystal-clear goals like these will help you stay focused
                 throughout the project and deliver the final website on time.
               </p>
-              <Text className="subH">Project scope</Text>
+              <Text className={style.subH}>Project scope</Text>
               <p id="para">
                 This section helps you set clients’ expectations regarding what
                 they can expect from you during the website project.
@@ -306,31 +307,31 @@ function WebsiteDevScope() {
                 can also add processes, assumptions, and foreseeable challenges
                 in this section.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 Here’s what you can add in the written scope:
               </Text>
-              <li className="liP">
+              <li className={style.liP}>
                 Work breakdown structure: that divides bigger tasks into
                 manageable chunks
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Scope exclusions: these will not be part of the project
                 deliverables
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Acceptance criteria: that spells out how both parties will
                 determine project success
               </li>
-              <Text className="subH">
+              <Text className={style.subH}>
                 Suppose, a website development project agrees on a project scope
                 that includes:
               </Text>
-              <li className="liP">Theme design and development</li>
-              <li className="liP">Host and domain setup</li>
-              <li className="liP">WordPress installation and setup</li>
-              <li className="liP">Content management system setup</li>
-              <li className="liP">Web design</li>
-              <li className="liP">Browser testing</li>
+              <li className={style.liP}>Theme design and development</li>
+              <li className={style.liP}>Host and domain setup</li>
+              <li className={style.liP}>WordPress installation and setup</li>
+              <li className={style.liP}>Content management system setup</li>
+              <li className={style.liP}>Web design</li>
+              <li className={style.liP}>Browser testing</li>
               <p id="para">
                 If the client wants you to work on items beyond these, you can
                 refer to the scope of work document to raise your concerns. A
@@ -341,7 +342,7 @@ function WebsiteDevScope() {
                 A comprehensive scope of work gives you the peace of mind to
                 focus on developing the client’s ideal website.
               </p>
-              <Text className="subH">Project deliverables</Text>
+              <Text className={style.subH}>Project deliverables</Text>
               <p id="para">
                 Project deliverables refer to all of the outputs that help the
                 client to understand project progress.
@@ -351,16 +352,16 @@ function WebsiteDevScope() {
                 it’s best to jump on a one-to-one call with your client to
                 better understand their needs and preferences.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 Here’s what you can ask to understand their expectations of the
                 project:
               </Text>
-              <li className="liP">What’s the purpose of the dev project?</li>
-              <li className="liP">How hands-on do they want to be?</li>
-              <li className="liP">
+              <li className={style.liP}>What’s the purpose of the dev project?</li>
+              <li className={style.liP}>How hands-on do they want to be?</li>
+              <li className={style.liP}>
                 What’s the timeline and budget for this web development?
               </li>
-              <li className="liP">Do they have any essential deliverables?</li>
+              <li className={style.liP}>Do they have any essential deliverables?</li>
               <p id="para">
                 Project deliverables aren’t essential, but they’re good for
                 keeping the client happy with project progress. It’s an easy way
@@ -372,7 +373,7 @@ function WebsiteDevScope() {
                 release than to reach the end of the project and have to redo
                 page after page of code.
               </p>
-              <Text className="subH">Development project schedule</Text>
+              <Text className={style.subH}>Development project schedule</Text>
               <p id="para">
                 A project schedule is more than a planner–it specifies a
                 detailed project timeline and the phases involved in reaching
@@ -393,7 +394,7 @@ function WebsiteDevScope() {
                 management workspace to create a schedule that everyone can
                 follow.
               </p>
-              <Text className="subH">Website project fees</Text>
+              <Text className={style.subH}>Website project fees</Text>
               <p id="para">
                 This is where you mention your proposed project fees. Website
                 developers either charge an hourly rate or service fees for
@@ -406,7 +407,7 @@ function WebsiteDevScope() {
                 likely already discussed the budget in the conversations leading
                 up to this scope of work–if not, you probably should.
               </p>
-              <Text className="subH">Project assumptions</Text>
+              <Text className={style.subH}>Project assumptions</Text>
               <p id="para">
                 Project assumptions are beliefs that you consider to be true for
                 your project to be successful. You anticipate certain events to
@@ -420,7 +421,7 @@ function WebsiteDevScope() {
                 to the assumptions surrounding the approval process will cause a
                 delay in the final delivery–see why this is so important?
               </p>
-              <Text className="subH">Project acceptance criteria</Text>
+              <Text className={style.subH}>Project acceptance criteria</Text>
               <p id="para">
                 Every scope of work template needs space for project acceptance
                 criteria. They are performance requirements and essential
@@ -434,23 +435,23 @@ function WebsiteDevScope() {
                 preferences, it’s best to talk to them beforehand about their
                 expectations.
               </p>
-              <Text className="subH">Terms and conditions</Text>
+              <Text className={style.subH}>Terms and conditions</Text>
               <p id="para">
                 Use this section to define the rules and conditions you’ll both
                 need to follow for the duration of the project.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 Here’s what to add in the terms and conditions section:
               </Text>
-              <li className="liP">
+              <li className={style.liP}>
                 Termination: defines under what conditions an agreement can be
                 ended
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Conflict resolution: standardizes rules for addressing issues
                 and disputes
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Overview of liabilities and other legal points: mention legal
                 obligations of both you and the client
               </li>
@@ -462,7 +463,7 @@ function WebsiteDevScope() {
               </p>
             </Box>
             <Box id="writeSOW">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 How to Write a Website Development Scope of Work
               </Text>
               <p id="para">
@@ -476,7 +477,7 @@ function WebsiteDevScope() {
                 needs so you can create their ideal solution.
               </p>
               <p id="para">Here’s how to start writing a solid scope of work:</p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 Find out exactly what the client wants
               </Text>
               <p id="para">
@@ -485,22 +486,22 @@ function WebsiteDevScope() {
                 one-on-one discussion with your client to understand their
                 vision.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 For example, some clients may want you to:
               </Text>
-              <li className="liP">Develop frontend or backend or both</li>
-              <li className="liP">Develop and maintain CMS</li>
-              <li className="liP">Execute integrations</li>
-              <li className="liP">Perform concept design</li>
-              <li className="liP">Set up widgets</li>
-              <li className="liP">Build mobile-responsive platform</li>
-              <li className="liP">Test website on mobile devices</li>
-              <li className="liP">Run search engine optimization check</li>
+              <li className={style.liP}>Develop frontend or backend or both</li>
+              <li className={style.liP}>Develop and maintain CMS</li>
+              <li className={style.liP}>Execute integrations</li>
+              <li className={style.liP}>Perform concept design</li>
+              <li className={style.liP}>Set up widgets</li>
+              <li className={style.liP}>Build mobile-responsive platform</li>
+              <li className={style.liP}>Test website on mobile devices</li>
+              <li className={style.liP}>Run search engine optimization check</li>
               <p id="para">
                 Once you understand all the work, you’re in a better position to
                 set milestones and create and track measurable goals.
               </p>
-              <Text className="subH">Highlight what sets you apart</Text>
+              <Text className={style.subH}>Highlight what sets you apart</Text>
               <p id="para">
                 Your clients are simply not looking for an average web
                 developer. They are looking for someone who has the expertise
@@ -513,7 +514,7 @@ function WebsiteDevScope() {
                 experience, skills, and knowledge which help you to stand out
                 from the rest.
               </p>
-              <Text className="subH">Add a CTA</Text>
+              <Text className={style.subH}>Add a CTA</Text>
               <p id="para">
                 You’ve got the client’s attention–now it’s time to guide them to
                 their next steps. This could be a quick confirmation call or a
@@ -529,7 +530,7 @@ function WebsiteDevScope() {
               </p>
             </Box>
             <Box id="SOWB">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 Creating a Website Development Scope of Work is Simple with
                 Bonsai
               </Text>
@@ -539,12 +540,12 @@ function WebsiteDevScope() {
                 With Bonsai, you can access hundreds of scope of work templates
                 and more for free.
               </p>
-              <Text className="subH">Here’s how to get started:</Text>
-              <li className="liP">Sign up for free to Bonsai</li>
-              <li className="liP">
+              <Text className={style.subH}>Here’s how to get started:</Text>
+              <li className={style.liP}>Sign up for free to Bonsai</li>
+              <li className={style.liP}>
                 Find a website development scope of work template
               </li>
-              <li className="liP">Edit and customize your template</li>
+              <li className={style.liP}>Edit and customize your template</li>
               <p id="para">
                 You can customize work templates, send them to the client, and
                 receive signed approval without ever leaving the platform.
@@ -554,10 +555,10 @@ function WebsiteDevScope() {
               </p>
             </Box>
             <Box id="SOWfaq">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 Website Development Scope of Work Template FAQs
               </Text>
-              <Text className="subH">
+              <Text className={style.subH}>
                 What is a website development scope of work?
               </Text>
               <p id="para">
@@ -570,19 +571,19 @@ function WebsiteDevScope() {
                 project summary, project scope, deliverables, project schedule,
                 cost, and key assumptions.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 What should you include in a website development scope of work?
               </Text>
               <p id="para">A website development SOW should include:</p>
-              <li className="liP">Project summary</li>
-              <li className="liP">Project goals</li>
-              <li className="liP">Project scope</li>
-              <li className="liP">Project deliverables</li>
-              <li className="liP">Project schedule</li>
-              <li className="liP">Project fees</li>
-              <li className="liP">Project assumptions</li>
-              <li className="liP">Project acceptance criteria</li>
-              <li className="liP">Terms and conditions</li>
+              <li className={style.liP}>Project summary</li>
+              <li className={style.liP}>Project goals</li>
+              <li className={style.liP}>Project scope</li>
+              <li className={style.liP}>Project deliverables</li>
+              <li className={style.liP}>Project schedule</li>
+              <li className={style.liP}>Project fees</li>
+              <li className={style.liP}>Project assumptions</li>
+              <li className={style.liP}>Project acceptance criteria</li>
+              <li className={style.liP}>Terms and conditions</li>
               <p id="para">
                 Instead of starting from scratch, you can use a website
                 development SOW template from Bonsai to get started!

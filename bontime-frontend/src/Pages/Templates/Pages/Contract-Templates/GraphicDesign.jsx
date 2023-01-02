@@ -1,6 +1,7 @@
 import React from "react";
 import TopSection from "../../Components/TopSection";
-import "../../Components/Article.css";
+import style from "../../Components/Article.module.css";
+
 
 import {
   Box,
@@ -103,10 +104,10 @@ function GraphicDesign() {
           </Box>
           <Box h="auto"  p="1em 1em">
             <Box id="freelanceDesign">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 How do freelance designers make money?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 Freelance designers generate income through creating and selling
                 templates, conducting design workshops, selling branding
                 packages and many more. Whatever service you're planning to
@@ -115,10 +116,10 @@ function GraphicDesign() {
               </p>
             </Box>
             <Box id="negotiate">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 How do you negotiate a design contract?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 When negotiating a design contract with a client, you must first
                 know their needs, budget and priority. Once you have figured
                 those out, you can align them with your rate and non-negotiables
@@ -128,10 +129,10 @@ function GraphicDesign() {
               </p>
             </Box>
             <Box id="legalbinding">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 Are freelance design contracts legally binding?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 By definition of the law, any agreement written in paper and
                 signed by the two parties involved is a legally binding
                 contracts. This also applies to freelance design contracts. So
@@ -140,12 +141,12 @@ function GraphicDesign() {
               </p>
             </Box>
             <Box id="designContract">
-              <Text className="Hfsize">What Is a Design Contract?</Text>
-              <p id="para">
+              <Text className={style.Hfsize}>What Is a Design Contract?</Text>
+              <p id={style.para}>
                 A graphic design contract is a legally binding document and
                 agreement between you, the graphic designer, and your client.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Makes sense, right? A solid graphic design contract will detail
                 all your requirements and list out your professional services.
                 If you’re a specialist in typography, brand recognition, layout
@@ -153,23 +154,23 @@ function GraphicDesign() {
                 particular responsibilities and make sure both parties
                 understand exactly what it is you’re being hired to do.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 As a graphic designer, you represent a business’s visual
                 communication. So, a graphic design contract will represent your
                 ability to visually communicate the business’s goals, as well as
                 protect both parties' best interests.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Note: Create a well-designed and personal template in minutes
                 without the help of Photoshop. Sign up to Bonsai now and get
                 started.
               </p>
             </Box>
             <Box id="includedContract">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 What Should Be Included In a Graphic Design Contract?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 Graphic design is subjective and open to interpretation. Even if
                 you understand the brief perfectly, a client could turn around
                 and decide that they don’t like your work. And if you don’t have
@@ -178,59 +179,59 @@ function GraphicDesign() {
                 outset, it could cost you precious time and money. This also
                 happens in a web design business.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 So, to avoid this and keep everyone on the same page, below you
                 can find what to include when writing graphic design contracts.
               </p>
-              <Text className="subH">Detailed descriptions of the work</Text>
-              <p id="para">
+              <Text className={style.subH}>Detailed descriptions of the work</Text>
+              <p id={style.para}>
                 Every polished and legally binding contract will need to
                 establish two things first:
               </p>
-              <li className="liP">Who is this contract between?</li>
-              <li className="liP">What is the nature of the contract?</li>
-              <p id="para">
+              <li className={style.liP}>Who is this contract between?</li>
+              <li className={style.liP}>What is the nature of the contract?</li>
+              <p id={style.para}>
                 After this, you can get into the finer details of your freelance
                 contract.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 The cornerstone of every good graphic design contract is being
                 specific and detailed. With this information, you'll exactly
                 know what is required to undertake the design project.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 For example, you may want to see the existing brand guidelines,
                 interview key stakeholders, or even test the product or service
                 to ensure that your design style fits with it.
               </p>
-              <Text className="subH">Timeline for deliverables</Text>
-              <p id="para">
+              <Text className={style.subH}>Timeline for deliverables</Text>
+              <p id={style.para}>
                 Next, you'll need to outline the project description and go into
                 detail about what it is you’ll be designing. If you’re working
                 with a brief or design proposal, reflect this in the contract.
                 List all the deliverables and the number of revisions you'll
                 provide—that way there’s absolutely no ambiguity.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 The last thing you want is to be vague with your language. If
                 you are, the client can request additional mock-ups or extra
                 services at the last minute without paying for them (a.k.a
                 “scope creep”).
               </p>
-              <p id="para">
+              <p id={style.para}>
                 It also makes sense to note what’s out of scope in this section.
                 If you’re tasked with designing a logo, you may want to
                 explicitly state that this does not include a business card or
                 letterhead design. That’s an extra service.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 After determining the project scope, you should outline any key
                 milestones. This should help you figure out the dates and
                 deadlines associated with the graphic design project. Be clear
                 around when something is due and what might affect this.
               </p>
-              <Text className="subH">Payment details</Text>
-              <p id="para">
+              <Text className={style.subH}>Payment details</Text>
+              <p id={style.para}>
                 Every basic graphic design contract template will include a
                 section for your payment details. Determining your rate and how
                 you get paid is up to you. Some graphic designers will charge
@@ -238,33 +239,33 @@ function GraphicDesign() {
                 even want to structure a payment schedule so that the client
                 pays you continuously and consistently.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 For many graphic designers, their payment terms will include a
                 non-refundable deposit. This can be from a few hundred dollars
                 to a certain percentage of the total project cost.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 Copyright (Intellectual Property) ownership and use
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 There are several copyright questions to answer for your graphic
                 design contract:
               </p>
-              <li className="liP">Who retains ownership of the design?</li>
+              <li className={style.liP}>Who retains ownership of the design?</li>
               <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/620278bbbaec1cf1a4679028_k5AjNjma0hXmqmMaw98fyaAB4wfm43JWiDRlwAP1eZ9wVFbwKTRNxqRbZx2PmntXvmyJTjqVBFX-TuOJ1qdjA4SzCY8gnZB87Sepzl0ExP1V52HiKyFcqjTgQ2hVyO02KtgibqpR.png" />
-              <li className="liP">When is ownership transferred?</li>
-              <li className="liP">Can you still use the final design?</li>
-              <li className="liP">
+              <li className={style.liP}>When is ownership transferred?</li>
+              <li className={style.liP}>Can you still use the final design?</li>
+              <li className={style.liP}>
                 Can I use the client's intellectual property?
               </li>
               <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/6202791b5cfd3782453736f8_0lmlVuvDe_xDGuBCQmqervh_4VrZPfFWJFWXXHLIwOUV_eVRRc7UBKhWSe0CCRJU6iQy3FLMrn87Py6-xOk7HpdrMGXlDg5AYLv-ZFaIxac4szqlBqfk0kSWMcmKhNiX-ExJsXzy.png" />
-              <p id="para">
+              <p id={style.para}>
                 Typically, the designer warrants a transfer of ownership with
                 the full and final payment. However, you may wish to retain some
                 reasonable control of the final design. You'd certainly want
                 approval to use it as promotional material in your portfolio.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 It's also a good idea to have the client's prior written consent
                 to use their intellectual property. This could be considered
                 confidential information, so discuss if you need a
@@ -272,13 +273,13 @@ function GraphicDesign() {
               </p>
               <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/62027800730ccacdc7442856_6NjbscJbvr_PnYmZG07Xs31nFjReTWE9dX-NIdtUFOBVm2Aff7uIFuGc6w9tLwgqZh3Yd5mYfZGn4Lr0FlsaDt8YHArt26GfWHYfdj6RX8IzjTYgdH7qa86spb7dpcLMVvzKeDqT.png" />
               <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/62027854faaac36455404ab9_ed5byw1nFYFPI1W5I8xneYDWCiIKqaKwLgIABiG3yi1C1sVPp10a6pX93U7tLHoyXJgclwlfsgmu5egi9hTm5KNpgTlmLWYK70GPM4JfDaDOk3e2D3QMISxq2oJ05YZyaY2kWmA8.png" />
-              <Text className="subH">Termination clause</Text>
-              <p id="para">
+              <Text className={style.subH}>Termination clause</Text>
+              <p id={style.para}>
                 Finally, you should clarify any reasons for the termination of
                 the contract. This could be on a specific date, when the project
                 ends, or due to other less favorable circumstances.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Mention that if either the designer or client wishes to end the
                 contract early, then written notice must be provided in advance.
                 If they decide to pull the plug on you when you're close to
@@ -289,8 +290,8 @@ function GraphicDesign() {
               </p>
             </Box>
             <Box id="contractSample">
-              <Text className="Hfsize">Graphic Design Contract Sample</Text>
-              <p id="para">
+              <Text className={style.Hfsize}>Graphic Design Contract Sample</Text>
+              <p id={style.para}>
                 Sign up to Bonsai for free and choose the graphic design
                 contract template. From there, you'll see every basic
                 fundamental that goes into creating a solid contract for graphic
@@ -298,70 +299,70 @@ function GraphicDesign() {
               </p>
             </Box>
             <Box id="ownTemplate">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 What’s the Benefit of Using Bonsai, Instead of Editing Your Own
                 Template?
               </Text>
-              <p id="para">There are a few key benefits:</p>
-              <li className="liP">
+              <p id={style.para}>There are a few key benefits:</p>
+              <li className={style.liP}>
                 Your contract will be legally approved—all our contracts are
                 vetted by lawyers
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 It's faster. We guide you through the process, editing parts of
                 the contract that are relevant to you
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Bonsai contracts can be electrically signed as soon as they're
                 finished
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 It saves you money. No need to hire a professional to audit your
                 contracts. Bonsai has your back
               </li>
-              <p id="para">
+              <p id={style.para}>
                 It’s essential that you get the details in your contract right.
                 In just a few minutes, you can easily create a contract with
                 Bonsai.
               </p>
             </Box>
             <Box id="contractBonsai">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 How to Create a Graphic Design Contract With Bonsai
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 Creating a graphic design contract template from scratch takes
                 time, effort, and know-how. Because each graphic design project
                 will be unique, the ability to quickly customize your contract
                 is vital.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Now, you could use a standard contract template, but they’re
                 often tricky to edit and format—especially when time’s a factor.
                 So, what’s the answer? One word: Bonsai.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Vetted by thousands of freelance designers and experienced
                 contract lawyers alike, Bonsai includes everything we’ve
                 mentioned above, and so much more. Simply select our graphic
                 design contract template, add your personal and project details,
                 and sign and send with just a few clicks.
               </p>
-              <p id="para">Here’s how to make a Bonsai contract in 5 simple steps:</p>
-              <p id="para">1. Select your template</p>
-              <p id="para">2. Add your basic info</p>
+              <p id={style.para}>Here’s how to make a Bonsai contract in 5 simple steps:</p>
+              <p id={style.para}>1. Select your template</p>
+              <p id={style.para}>2. Add your basic info</p>
               <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/6202763e919edd01b8d89da3_DTif3lqDPGpPIfofcbMD3dGGo5PNH9tnTsKUc3a3aI3lBNMqJPxRVTtviBQMD17qKU9Bdn1ROBA_jSfqlO0vcOTMvJCpuTZNNWs_9FXkc14nR2atd1MfXFnPVlMLdj3rdQKMfUiL.png" />
-              <p id="para">3. Add your scope of work</p>
+              <p id={style.para}>3. Add your scope of work</p>
               <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/62027971919edd8570d98ddd_QdTNv4UUjVTaj_Or2CA8prKxt8SKdtUyOJwCyv6pdizVvdypnBxDDyuuI6Lw1kWLsLTvCpTEZR6wLPvVNuNukAlIk9OG2ZYagQTole2PmnqmRFsUD1gsDnIfl8448BvJClCaa-Qc.png" />
-              <p id="para">4. Add your payment info</p>
-              <p id="para">5. Review and sign your final contract</p>
+              <p id={style.para}>4. Add your payment info</p>
+              <p id={style.para}>5. Review and sign your final contract</p>
             </Box>
             <Box id="graphicfaq">
-              <Text className="Hfsize">Graphic Design Contract FAQs</Text>
-              <Text className="subH">
+              <Text className={style.Hfsize}>Graphic Design Contract FAQs</Text>
+              <Text className={style.subH}>
                 How much should a graphic designer charge?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 What you charge can depend on a whole range of things, including
                 experience, where you’re located, or the client hiring you.
                 According to the U.S. Bureau of Labor Statistics (BLS), the
@@ -370,20 +371,20 @@ function GraphicDesign() {
                 to grow around 4% until 2026, you can be sure the average rate
                 will follow suit.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 Do I need a contract for a freelance graphic designer?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 Yes, of course! Freelance graphic design is a business and if
                 you want to be taken seriously, then you’ll need a solid graphic
                 design contract. If you plan on hiring more than one freelancer,
                 you can make life much easier for yourself by using a graphic
                 design contract template from Bonsai.
               </p>
-              <Text className="subH">
+              <Text className={style.subH}>
                 Where do I find a freelance graphic designer?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 There are plenty of resources you can use to find a freelance
                 graphic designer. Posting a job description online, using a
                 recruitment company, or even finding a freelancer on 99designs
@@ -392,10 +393,10 @@ function GraphicDesign() {
               </p>
             </Box>
             <Box id="Examplegraphic">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 Examples of graphic design contracts
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 Of course, we believe Bonsai has the best graphic design
                 contract template out there, but sometimes it helps to see some
                 examples of existing graphic design contracts for inspiration.

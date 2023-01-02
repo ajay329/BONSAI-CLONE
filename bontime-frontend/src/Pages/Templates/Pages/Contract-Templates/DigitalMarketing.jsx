@@ -1,6 +1,6 @@
 import React from "react";
 import TopSection from "../../Components/TopSection";
-import "../../Components/Article.css";
+import "../../Components/Article.module.css";
 import {
   Box,
   Grid,

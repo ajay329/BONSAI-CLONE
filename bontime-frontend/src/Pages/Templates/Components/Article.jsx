@@ -1,4 +1,4 @@
-import "./Article.css";
+import style from "./Article.module.css";
 
 
 import {
@@ -78,29 +78,29 @@ const Article = () => {
           </Box>
           <Box h="auto" border="1px solid red" p="1em 1em">
             <Box id="">
-              <Text className='Hfsize'>
+              <Text className={style.Hfsize}>
                 
               </Text>
               
             </Box>
             <Box id="">
-              <Text className='Hfsize'>
+              <Text className={style.Hfsize}>
                 
               </Text>
              
             </Box>
             <Box id="">
-              <Text className='Hfsize'>
+              <Text className={style.Hfsize}>
                 
               </Text>
             </Box>
             <Box id="">
-              <Text className='Hfsize'>
+              <Text className={style.Hfsize}>
                 
               </Text>
             </Box>
             <Box id="">
-            <Text className='Hfsize'>
+            <Text className={style.Hfsize}>
                 
                 </Text>
             </Box>

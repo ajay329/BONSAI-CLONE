@@ -1,6 +1,6 @@
 import React from "react";
 import TopSection from "../../Components/TopSection";
-import "../../Components/Article.css";
+import style from "../../Components/Article.module.css";
 import NavLogo from "../../Components/NavLogo";
 
 import {
@@ -88,18 +88,18 @@ function FreeContractMaker() {
           </Box>
           <Box h="auto"  p="1em 1em">
             <Box id="contractT">
-              <Text className="Hfsize">Are there free contract templates?</Text>
-              <p id="para">
+              <Text className={style.Hfsize}>Are there free contract templates?</Text>
+              <p id={style.para}>
                 Bonsai has lawyer curated general contract templates that you
                 can easily edit. Simply create a free account and download the
                 template.
               </p>
             </Box>
             <Box id="validC">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 What are the 5 requirements for a valid contract?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 The 5 requirements for a contract to be valid are: Offer,
                 Acceptance, Consideration, Mutuality of obligation, and
                 Competency and capacity. You may add more information to your
@@ -108,105 +108,105 @@ function FreeContractMaker() {
               </p>
             </Box>
             <Box id="rule">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 What is the most basic rule to a contract?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 While there are 5 requirements of a valid contract, the most
                 basic rule is simple. That there is an offer from one party and
                 it is accepted by another party.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Freelance projects come in all shapes and sizes. From one-off
                 design or writing tasks, to long-term web dev collaborations and
                 ongoing consultancy under retainer agreement, no two jobs are
                 ever the same.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 But there’s one thing that unites them all: the need for a solid
                 business agreement.{" "}
               </p>
-              <p id="para">
+              <p id={style.para}>
                 As a freelancer, you must ensure that you’re paid for your time
                 and expertise, and the best way of doing that is to use a
                 legally-binding online contract template, setting out your
                 milestones, terms, and expectations.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Let’s take a quick look at what you need to include in your next
                 freelance contract:
               </p>
-              <Text className="subH">Personal & Professional Details</Text>
-              <p id="para">
+              <Text className={style.subH}>Personal & Professional Details</Text>
+              <p id={style.para}>
                 First, you need to establish who the agreement is between and
                 the nature of the relationship. This clarifies, from the word
                 go, that you’re acting as an independent contractor or an LLC,
                 and not as an employee of your client.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Depending where you are in the world, this can be an important
                 distinction to make. Any uncertainty over this could result in
                 tax issues for you and your client. And you don’t want that.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 The good news is, most online contract makers use input fields
                 for this info, making it clear who’s who from the outset.‍
               </p>
-              <Text className="subH">Scope of Work</Text>
-              <p id="para">
+              <Text className={style.subH}>Scope of Work</Text>
+              <p id={style.para}>
                 Even if your job is, on paper, a quick one, it makes sense to
                 include a scope of work in your online contract. By outlining
                 the work you’re being asked to do in as much detail as possible,
                 you protect yourself from taking on additional tasks which are
                 deemed “out of scope”.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 For example, if you’re a web designer being asked to build a
                 landing page on an existing website, you should make it clear
                 that you will not be supplying the content for that page (that’s
                 the client’s responsibility — more on that below).‍
               </p>
-              <Text className="subH">Project Responsibilities</Text>
-              <p id="para">
+              <Text className={style.subH}>Project Responsibilities</Text>
+              <p id={style.para}>
                 To successfully deliver a freelance project, you need to
                 determine who is responsible for what. Whether that’s web copy
                 for a web design project, or access to third party software for
                 ongoing social media marketing tasks, be specific about who
                 needs to deliver something, and by when.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 The beauty of using an online contract is that you can agree on
                 this via email, and simply copy & paste the list into the
                 contract.‍
               </p>
-              <Text className="subH">Milestones</Text>
-              <p id="para">
+              <Text className={style.subH}>Milestones</Text>
+              <p id={style.para}>
                 Your online contract should also include a section for project
                 milestones. It’s here that you outline the dates and deadlines
                 associated with your freelance job. Be crystal clear with
                 regards to when something is due, and what might impact
                 delivery.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 For instance, if your client is unable to fulfil their
                 responsibilities mentioned above, it could dramatically alter
                 your proposed timeline. And if you fail to highlight this in the
                 agreement, you could be held to the original deadline, causing
                 stress and friction further down the line. ‍
               </p>
-              <Text className="subH">Payment Details</Text>
-              <p id="para">
+              <Text className={style.subH}>Payment Details</Text>
+              <p id={style.para}>
                 Finally, your online contract should state how much, how, and
                 when you’ll be paid for your freelance work.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 The amount you quote and the method of payment you accept is
                 entirely up to you. However, you may wish to structure the
                 payment schedule differently depending on the type and length of
                 the project, perhaps taking a deposit up-front, or payment upon
                 completion of certain milestones.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 As we’ll discover in the next section, using an online contract
                 maker can help you streamline the payment process, generating
                 invoices for each milestone with a simple click. You can also
@@ -214,78 +214,78 @@ function FreeContractMaker() {
               </p>
             </Box>
             <Box id="onlineC">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 How can I create an online contract with Bonsai’s online
                 contract maker?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 Writing a contract using a standard contract template can help
                 you produce a largely generic agreement relatively quickly.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 But if you want to get into specifics, you’ll quickly discover
                 that doing so can be difficult. Many templates are rigid,
                 difficult to edit and format, and use way too much jargon.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 To avoid this, we recommend that you join an increasing number
                 of top-tier freelancers and use an online contract maker to
                 create your next freelance business agreement.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 ‍Bonsai’s contract generator has been vetted by experienced
                 contract lawyers and thousands of expert freelancers, covering
                 all of the important aspects of a contract we mentioned earlier.
               </p>
-              <p id="para">And the best bit? It’s super easy to use. ‍</p>
-              <Text className="subH">
+              <p id={style.para}>And the best bit? It’s super easy to use. ‍</p>
+              <Text className={style.subH}>
                 Here’s how to make a contract with Bonsai in 5 simple steps:
               </Text>
-              <Text className="subH">Step One - Select Your Template</Text>
-              <li className="liP">
+              <Text className={style.subH}>Step One - Select Your Template</Text>
+              <li className={style.liP}>
                 Choose from a range of ready-made online contract templates, or
                 start with a blank template. Add your client name, project name
                 and preferred currency.
                 <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/604f4445f1ea3005d41598df_Untitled-1-2.png" />
               </li>
-              <Text className="subH">Step Two - Add Your Basic Info </Text>
-              <li className="liP">
+              <Text className={style.subH}>Step Two - Add Your Basic Info </Text>
+              <li className={style.liP}>
                 Next, fill in your basic info. This includes your location
                 (country and state/province), your legal entity (if you operate
                 as an LLC), and your client’s legal name (company/individual).
                 <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/604f45a63b89923ebc7b67e3_basic-2.png" />
               </li>
-              <Text className="subH">Step Three - Add Your Scope of Work </Text>
-              <li className="liP">
+              <Text className={style.subH}>Step Three - Add Your Scope of Work </Text>
+              <li className={style.liP}>
                 Describe the scope of work in as much detail as possible. You
                 can also attach a separate statement of work file here if you
                 wish.
                 <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/604f458c4fc50c15a1dcf27f_scope-2.png" />
               </li>
-              <Text className="subH">Step Four - Add Your Payment Details</Text>
-              <li className="liP">
+              <Text className={style.subH}>Step Four - Add Your Payment Details</Text>
+              <li className={style.liP}>
                 Determine how and how much your client will pay you for your
                 freelance services here. You can choose from a flat fee,
                 milestone payments, or hourly, daily, weekly, or monthly rates.
               </li>
-              <p id="para">
+              <p id={style.para}>
                 You can outline payment terms (net 15 days for invoices, for
                 example), late payment fees, and contract start and end dates
                 here.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 And you can also automatically generate an invoice if you’re
                 requesting a deposit prior to starting work. This can be sent
                 along with the contract, or you can choose to send it manually.
               </p>
               <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/604f45f390597556dad1fb13_payment1-2.png" />
               
-              <li className="liP">
+              <li className={style.liP}>
                 Now you’re ready to review your vetted and legal contract. And
                 if you want to make any edits to the template, you can do so at
                 this stage.
               </li>
-              <p id="para">
+              <p id={style.para}>
                 If you’re happy with the finished agreement, you can click “SIGN
                 CONTRACT” to digitally sign it with a legally-binding online
                 signature, before sending it to your client to do likewise. You
@@ -293,47 +293,47 @@ function FreeContractMaker() {
                 how to digitally sign a PDF.
               </p>
               <Image src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072902/604f46c984f8f81c9d35445a_final-2.png" />
-              <p id="para">
+              <p id={style.para}>
                 And that’s it! Super easy. Once sent, you can return to your
                 dashboard to track when the contract has been delivered, opened,
                 and signed.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Ready to freelance like a pro? Create an online contract with
                 Bonsai.
               </p>
             </Box>
             <Box id="creatingC">
-              <Text className="Hfsize">
+              <Text className={style.Hfsize}>
                 What are the Advantages of Creating a Contract with Bonsai?
               </Text>
-              <p id="para">
+              <p id={style.para}>
                 A ready-to-use contract template offers a number of benefits to
                 freelancers and small businesses that they wouldn’t otherwise
                 get with a homemade legal agreement. Free contract templates
                 from Bonsai are:
               </p>
-              <li className="liP">
+              <li className={style.liP}>
                 Quick and easy: a contract template does all the time-consuming
                 work for you. It’s got all the sections required for a world
                 class agreement–all you need to do is jump in, add
                 project-related details, your branding, and any necessary info
                 on the parties involved.
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Legally sound: a formal contract needs to be a legally binding
                 document–otherwise, it’s unenforceable. Using a Bonsai template
                 gives you a legally binding contract without the pain of having
                 to seek legal advice or consider local laws.
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Comprehensive: the contract maker software ensures you include
                 all the essential elements you need to create a binding
                 agreement. Whether it’s a construction contract or an
                 independent contractor agreement–the free legal forms on Bonsai
                 have you covered.‍
               </li>
-              <li className="liP">
+              <li className={style.liP}>
                 Online: create a digital contract in just a few clicks with
                 Bonsai. Legal contracts have never been simpler–and neither has
                 the signing process. Bonsai’s electronic signatures allow you to
@@ -342,7 +342,7 @@ function FreeContractMaker() {
                 as contact details and personal information–ending up in the
                 wrong hands.
               </li>
-              <p id="para">
+              <p id={style.para}>
                 All of these considerations make Bonsai a must-have resource for
                 small businesses and freelancers alike. Whether it’s contract
                 templates or invoice templates–you can save time with Bonsai.
@@ -351,14 +351,14 @@ function FreeContractMaker() {
             </Box>
                         
             <Box id="help">
-              <Text className="Hfsize">How Else Can Bonsai Help You?</Text>
-              <p id="para">We’re glad you asked.</p>
-              <p id="para">
+              <Text className={style.Hfsize}>How Else Can Bonsai Help You?</Text>
+              <p id={style.para}>We’re glad you asked.</p>
+              <p id={style.para}>
                 Bonsai’s archive of over 400+ business templates can help you
                 create proposals, contracts, agreements, scopes of work,
                 quotations, and invoices–all from the same dashboard.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Maybe you’re bringing in a new employee for your fast growing
                 small business? We’ve got an employment contract template for that
                 here. Perhaps you’re looking to keep things private? Take a look
@@ -366,7 +366,7 @@ function FreeContractMaker() {
                 more templates where that came from–sign up today for free to
                 access them all.
               </p>
-              <p id="para">
+              <p id={style.para}>
                 Bonsai’s templates enable you to manage your business documents
                 easily and securely in one place. Create contracts in minutes and
                 easily customize templates for clients new and old to ensure your

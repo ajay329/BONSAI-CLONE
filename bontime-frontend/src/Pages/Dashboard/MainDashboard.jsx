@@ -2,7 +2,7 @@ import { Box, Flex, Image , Stack,Text, Grid} from '@chakra-ui/react';
 import React,{useState} from 'react'
 import { IoIosAdd } from "react-icons/io";
 import { AiOutlineHome } from "react-icons/ai";
-import "./MainDashboard.css"
+import style from  "./MainDashboard.module.css"
 import {
   HiOutlineFolderOpen,
   HiOutlineNewspaper,
@@ -46,13 +46,13 @@ const MainDashboard = () => {
       <Stack color="#7c7777" justify="space-between">
         <Grid gap={2}>
           
-            <Flex align="center" gap={3} fontSize="14px" onClick={()=>setTitle("Main")} className="sections" >
+            <Flex align="center" gap={3} fontSize="14px" onClick={()=>setTitle("Main")} className={style.sections} >
               <AiOutlineHome fontSize="18px" fontWeight="300" />
               <Text>Dashboard</Text>
             </Flex>
           
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <Box>
                 <HiOutlineUserGroup fontSize="15px" fontWeight="300" />
               </Box>
@@ -60,13 +60,13 @@ const MainDashboard = () => {
             </Flex>
          
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <HiOutlineFolderOpen fontSize="18px" fontWeight="300" />
               <Text>Projects</Text>
             </Flex>
           
           
-            <Flex align="center" gap={3} fontSize="14px"className="sections" onClick={()=>setTitle("tasks")}>
+            <Flex align="center" gap={3} fontSize="14px"className={style.sections} onClick={()=>setTitle("tasks")}>
               <BiTask fontSize="18px" fontWeight="300" />
               <Text>Tasks</Text>
             </Flex>
@@ -74,19 +74,19 @@ const MainDashboard = () => {
         </Grid>
         <Grid gap={2}>
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <HiOutlineNewspaper fontSize="18px" fontWeight="300" />
               <Text>Proposals</Text>
             </Flex>
          
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <BsFileText fontSize="18px" fontWeight="300" />
               <Text>Contracts</Text>
             </Flex>
           
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <TbFileDollar fontSize="18px" fontWeight="300" />
               <Text>Invoices</Text>
             </Flex>
@@ -94,21 +94,21 @@ const MainDashboard = () => {
         </Grid>
         <Grid gap={2}>
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <HiOutlineClock fontSize="18px" fontWeight="300" />
               <Text>Time Tracking</Text>
             </Flex>
         
 
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <FaWpforms fontSize="18px" fontWeight="300" />
               <Text>Forms</Text>
             </Flex>
         
 
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <MdOutlineHomeRepairService fontSize="18px" fontWeight="300" />
               <Text>Services</Text>
             </Flex>
@@ -116,19 +116,19 @@ const MainDashboard = () => {
         </Grid>
         <Grid gap={2}>
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <GoCreditCard fontSize="18px" fontWeight="300" />
               <Text>Cash</Text>
             </Flex>
    
          
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <TbReceipt2 fontSize="18px" fontWeight="300" />
               <Text>Accounting</Text>
             </Flex>
         
           
-            <Flex align="center" gap={3} fontSize="14px" className="sections">
+            <Flex align="center" gap={3} fontSize="14px" className={style.sections}>
               <TbReceiptTax fontSize="18px" fontWeight="300" />
               <Text>Taxes</Text>
             </Flex>

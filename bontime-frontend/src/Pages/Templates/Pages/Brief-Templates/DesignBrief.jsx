@@ -3,7 +3,7 @@ import SignupTemplate from "../../Components/SignupTemplate";
 import RelatedTemplates from "../../Components/RelatedTemplates";
 import Footer from "../../../../components/Footer/Footer";
 import TopSection from "../../Components/TopSection";
-import "../../Components/Article.css";
+import style from  "../../Components/Article.module.css";
 import NavLogo from "../../Components/NavLogo";
 
 import {

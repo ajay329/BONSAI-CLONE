@@ -1,7 +1,7 @@
-import './navar.css'
-import React from 'react'
-import { Link } from 'react-router-dom';
-
+import style from './navar.module.css'
+import React,{useState} from 'react'
+import { Link,useNavigate  } from 'react-router-dom';
+import toast, { Toaster } from "react-hot-toast";
 
 import {
   Box,
@@ -13,7 +13,21 @@ import {
 
 import logo from "../../assets/Logo/logo.png";
 const Navbar = () => {
-  
+  let input = localStorage.getItem("token");
+
+  const [token, setToken] = useState(input ? input : "");
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/login");
+  };
+  const handleLogout = () => {
+    toast.success("Logged out successfully");
+    setTimeout(() => {
+      localStorage.removeItem("token");
+      setToken("");
+      navigate("/login");
+    }, 2000);
+  };
   
   return (
     <>
@@ -37,9 +51,9 @@ const Navbar = () => {
             <Spacer />
 
             <Box p="2">
-              <div class="dropdown">
-                <button class="dropbtn">Product ⌵</button>
-                <div class="dropdown-content">
+              <div class={style.dropdown}>
+                <button class={style.dropbtn}>Product ⌵</button>
+                <div class={style.dropdownContent}>
                   <Link to="/bonCash">
                     <Text fontSize={"22px"}>Bonsai Workflow</Text>
                     <Text mt="15px" color="grey">
@@ -72,9 +86,9 @@ const Navbar = () => {
               </div>
             </Box>
             <Box p="2">
-              <div class="dropdown">
-                <button class="dropbtn">Templates ⌵</button>
-                <div class="dropdown-content">
+              <div class={style.dropdown}>
+                <button class={style.dropbtn}>Templates ⌵</button>
+                <div class={style.dropdownContent}>
                   <Link to="/freeContract">
                     <Text>☲ Contract Templates</Text>
                   </Link>
@@ -100,15 +114,15 @@ const Navbar = () => {
               </div>
             </Box>
             <Box p="1.5">
-              <div class="dropdown">
-                <button class="dropbtn">
+              <div class={style.dropdown}>
+                <button class={style.dropbtn}>
                   <Link to="/pricing">Pricing</Link>
                 </button>
               </div>
             </Box>
             <Box p="1.5">
-              <div class="dropdown">
-                <button class="dropbtn">
+              <div class={style.dropdown}>
+                <button class={style.dropbtn}>
                   <Link to="/reviews">Reviews</Link>
                 </button>
               </div>
@@ -121,19 +135,21 @@ const Navbar = () => {
                   color="#06B48B"
                   size="md"
                   border={"1px solid teal"}
+                  onClick={token ? handleLogout : handleLogin}
                 >
-                  LOG IN
+                  {token ? "Logout" : "Login"}
                 </Button>
               </Link>
             </Box>
 
-            <Box p="3">
+            <Box p="3" display={token ? "none":'block'}>
               <Link to="/sign-up">
                 <Button bg="#06B48B" color={"white"} size="md">
                   START FREE
                 </Button>
               </Link>
             </Box>
+            <Toaster />
           </Flex>
         </Box>
 
