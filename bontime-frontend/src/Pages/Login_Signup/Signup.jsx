@@ -446,7 +446,7 @@ const intialData = {
 export const SignUp = () => {
   const navigate = useNavigate();
 
-  const url = "https://morning-violet-5198.fly.dev/users/signup";
+  const url = "https://holy-wave-7256.fly.dev/users/signup";
 
   const [data, setData] = useState(intialData);
 
@@ -481,12 +481,12 @@ export const SignUp = () => {
     setData(newData);
     // console.log(newData);
   }
-  useEffect(()=>{
-    const token = localStorage.getItem('token');
-    if(token){
-      navigate("/")
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/");
     }
-    },[])
+  }, []);
   return (
     <>
       <Box w={["100%", "100%", "100%", "75%"]} m="50px auto" p="0px 40px">

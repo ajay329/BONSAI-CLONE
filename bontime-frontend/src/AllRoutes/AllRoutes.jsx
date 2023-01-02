@@ -30,8 +30,8 @@ const AllRoutes = () => {
         <Route path='/signup' element={<SignUp/>} />
         <Route path='/bonTax' element={<BonTax/>} />
         <Route path='/bonCash' element={<BonCash/>} />
-        <Route path='/dashboard' element={<Dashboard/>} />
-        <Route path='/sidebar' element={<Sidebar/>} />
+        {/* <Route path='/dashboard' element={<Dashboard/>} /> */}
+        {/* <Route path='/sidebar' element={<Sidebar/>} /> */}
         <Route path='/freeContract' element={<FreeContractMaker/>} />
         <Route path='/digitalMarketingContract' element={<DigitalMarketingContract/>} />
         <Route path='/graphicDesignContract' element={<GraphicDesignContract/>} />

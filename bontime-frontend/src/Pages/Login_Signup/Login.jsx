@@ -27,7 +27,7 @@ const initalState = {
 export const Login = () => {
   const navigate = useNavigate();
 
-  const url = "https://morning-violet-5198.fly.dev/users/login";
+  const url = "https://holy-wave-7256.fly.dev/users/login";
 
   const [data, setData] = useState(initalState);
 
@@ -38,7 +38,7 @@ export const Login = () => {
       password: data.password,
     })
       .then((res) => {
-        console.log(res.data);
+        
         toast.success("Logged In Successfully", {
           style: {
             border: "1px solid #713200",
